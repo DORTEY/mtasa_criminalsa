@@ -1,0 +1,11 @@
+<map edf:definitions="editor_main">
+    <removeWorldObject id="removeWorldObject (la_fuckcar2) (1)" radius="5.7480135" interior="-1" model="3593" lodModel="0" posX="2407.3125" posY="-1418.3594" posZ="23.6875" rotX="0" rotY="0" rotZ="0"></removeWorldObject>
+    <removeWorldObject id="removeWorldObject (la_fuckcar2) (2)" radius="5.7480135" interior="-1" model="3593" lodModel="0" posX="2413.3281" posY="-1399.6094" posZ="23.6875" rotX="0" rotY="0" rotZ="0"></removeWorldObject>
+    <removeWorldObject id="removeWorldObject (sm_veg_tree6) (1)" radius="11.084518" interior="-1" model="700" lodModel="0" posX="2413.5781" posY="-1409.8594" posZ="22.54688" rotX="0" rotY="0" rotZ="0"></removeWorldObject>
+    <object id="object (helipad01) (1)" breakable="false" interior="0" alpha="255" dimension="0" model="3934" scale="1" doublesided="true" collisions="true" frozen="false" posX="2431.7002" posY="-1379.5996" posZ="27.5" rotX="0" rotY="0" rotZ="0"></object>
+    <object id="object (sm_veg_tree6) (1)" breakable="false" interior="0" alpha="255" dimension="0" model="700" scale="1" doublesided="false" collisions="true" posX="2416.6001" posY="-1398.1" posZ="23.3" rotX="0" rotY="0" rotZ="-100.003"></object>
+    <object id="object (sm_veg_tree6) (2)" breakable="false" interior="0" alpha="255" dimension="0" model="700" scale="1" doublesided="false" collisions="true" posX="2418.9004" posY="-1382" posZ="23.5" rotX="0" rotY="0" rotZ="-100.003"></object>
+    <removeWorldObject id="removeWorldObject (la_fuckcar2) (3)" radius="5.7480135" interior="-1" model="3593" lodModel="0" posX="2377.4141" posY="-1427.9922" posZ="23.6875" rotX="0" rotY="0" rotZ="0"></removeWorldObject>
+    <removeWorldObject id="removeWorldObject (la_fuckcar1) (1)" radius="5.7985301" interior="-1" model="3594" lodModel="0" posX="2526.5781" posY="-1474.375" posZ="24.58594" rotX="0" rotY="0" rotZ="0"></removeWorldObject>
+    <removeWorldObject id="removeWorldObject (la_fuckcar1) (2)" radius="5.7985301" interior="-1" model="3594" lodModel="0" posX="2510.5859" posY="-1474.0391" posZ="23.60938" rotX="0" rotY="0" rotZ="0"></removeWorldObject>
+</map>

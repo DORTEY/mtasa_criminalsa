@@ -1,0 +1,162 @@
+*{
+    letter-spacing: 0.3vh;
+    text-shadow: 0vh 0vh 0.8vh rgba(0, 0, 0, 0.418);
+}
+
+
+@font-face{
+	font-family: "Rajdhani-Bold";
+	src: url("Fonts/Rajdhani-Bold.ttf");
+}
+@font-face{
+	font-family: "Rajdhani-Medium";
+	src: url("Fonts/Rajdhani-Medium.ttf");
+}
+
+.MaskWhite{
+    color: rgba(199,199,199,1);
+}
+.MaskBlack{
+    color: rgba(78,78,78,1);
+}
+.MaskGreen{
+    color: rgba(60,255,60,1);
+}
+.MaskRed{
+    color: rgba(255,60,60,1);
+}
+.MaskAqua{
+	color: rgba(0,240,255,1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.MainUI{
+	position: absolute;
+	top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    height: 100%;
+
+	overflow:  hidden;
+}
+
+.Banner{
+	position: absolute;
+	top: -1vh;
+    left: 50%;
+    transform: translateX(-50%);
+	
+    width: 37vh;
+    height: 15vh;
+}
+
+.Title-Bar{
+	position: absolute;
+	top: 0vh;
+	left: 50%;
+    transform: translateX(-50%);
+
+	width: 100%;
+	height: 6vh;
+
+	background:rgba(255,255,255,0.04);
+    border-width: 0.1vh;
+    border-style: solid;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-image: radial-gradient(#00000000, rgba(255, 255, 255, 0.123), rgba(0, 0, 0, 0)) 1;
+    box-shadow: 0vh 0vh 2vh rgba(0,0,0,0.295);
+
+	border-top-left-radius: 1vh;
+	border-top-right-radius: 1vh;
+}
+.Title-Title{
+	position: absolute;
+	top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+	
+    align-content: center;
+    text-align: center;
+    font-size: 2vh;
+	font-family: "Rajdhani-Bold";
+
+	background:-webkit-linear-gradient(rgb(255, 255, 255), #c7c7c7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    white-space: nowrap;
+}
+.Title-Title span{
+    background:-webkit-linear-gradient(rgba(0,242,255,1), rgba(2,160,168,1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+
+
+
+
+.ButtonClose{
+	z-index: 50;
+    position: absolute;
+    top: 1.3vh;
+	right: 1.3vh;
+	transition: 0.3s;
+
+	width: 3.5vh;
+	height: 3.5vh;
+
+    font-size: 1.6vh;
+	color:#fff;
+
+	background:rgba(255,255,255,0.04);
+
+	border: none;
+	border-radius: 1vh;
+
+    outline: none;
+    backface-visibility: hidden;
+}
+.ButtonClose:hover {
+    letter-spacing: 0.2vh;
+}
+.ButtonClose:hover:before{
+    opacity:1;
+}
+.ButtonClose:before{
+	content:"";
+	z-index: -1;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+	transition: 0.3s;
+
+	width: 100%;
+    height: 100%;
+
+    background:rgba(255,0,0,0.2);
+
+    border-radius: 1vh;
+
+    backface-visibility: hidden;
+}

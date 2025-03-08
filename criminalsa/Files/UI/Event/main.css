@@ -1,0 +1,220 @@
+body{
+	margin: 0;
+    padding: 0;
+    overflow: hidden;
+    user-select: none;
+}
+
+.SecondUI{
+	position: absolute;
+
+	top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 80vh;
+    height: 62vh;
+
+	background: repeating-linear-gradient(-55deg,rgba(56, 56, 56, 0.36),rgba(56, 56, 56, 0.36) 1.0vh,rgba(56, 56, 56, 0.4), 1.0vh,rgba(56, 56, 56, 0.4) 2.0vh);
+    background-color:rgb(0, 0, 0);
+
+	border-radius: 1vh;
+}
+
+.Timer-Bar{
+	position: absolute;
+	top: -2vh;
+	left: -5vh;
+	transform: rotate(-16deg);
+
+	width: 25vh;
+	height: 6vh;
+
+	background:repeating-linear-gradient(-55deg,rgba(56, 56, 56, 0.36),rgba(56, 56, 56, 0.36) 1.0vh,rgba(56, 56, 56, 0.4), 1.0vh,rgba(56, 56, 56, 0.4) 2.0vh);
+	background-color: rgb(0, 0, 0);
+
+    box-shadow: 0vh 0vh 2vh rgba(0,0,0,0.295);
+
+	border-radius: 1vh;
+
+	white-space: nowrap;
+}
+.Timer-Title{
+	position: absolute;
+	top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+	
+    align-content: center;
+    text-align: center;
+    font-size: 1.6vh;
+	font-family: "Rajdhani-Bold";
+	color: #fff;
+}
+/* #Timer-Title{
+	position: absolute;
+
+	top: -0.5vh;
+	left: -5vh;
+
+	font-size: 1.3vh;
+	color: rgba(255,95,95,1);
+	padding: 1pt 8pt;
+	margin: 0 0 0 1.5vh;
+	border-radius: 1vh;
+	transform: rotate(-16deg);
+	border: 1px solid rgba(255,0,0,1);
+	box-shadow: 0px 0px 0.6vh rgba(0,0,0,0.55);
+
+	background-color: rgba(255,50,50,0.40);
+} */
+
+
+.SecondUIList{
+	position: relative;
+
+	top: 8vh;
+    left: 2vh;
+    width: 76vh;
+    height: 52vh;
+
+    background: rgba(255,255,255,0.04);
+
+	overflow: auto;
+	outline: none;
+}
+/*Normal lists*/
+.SecondUIList-ItemBox{
+	position: relative;
+	float: left;
+	width: 20.8vh;
+	height: 14.6vh;
+	transition: 0.3s;
+
+	margin: 0.49vh;
+	padding: 0.8vh 1.5vh;
+
+	font-size: 1.5vh;
+	text-align: center;
+	color: rgba(120,120,120,1);
+
+	background: rgba(20,20,20,1);
+
+	border: 0.1vh solid rgba(255,255,255,0.20);
+	border-radius: 1vh;
+}
+.SecondUIList-Icon{
+	position: absolute;
+	top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+	width: 9vh;
+	/* height: 8vh; */
+}
+.SecondUIList-ItemTitle{
+	position: absolute;
+	top: 0.6vh;
+    left: 50%;
+    transform: translateX(-50%);
+
+	width: 85%;
+
+	font-size: 1.2vh;
+	font-family: "Rajdhani-Medium";
+}
+.SecondUIList-ItemText{
+	position: absolute;
+	top: 2.5vh;
+    left: 1.5vh;
+
+	font-size: 1.6vh;
+	font-family: "Rajdhani-Medium";
+}
+
+
+
+
+
+.Button{
+	z-index: 50;
+    position: absolute;
+	transition: 0.3s;
+	bottom: 1vh;
+    left: 50%;
+    transform: translateX(-50%);
+
+	width: 19vh;
+	height: 2.5vh;
+
+    text-shadow: 0 0 0.6vh rgb(0, 0, 0);
+    font-size: 1.4vh;
+	color:#fff;
+
+	background:rgba(255,255,255,0.04);
+
+	border: none;
+	border-radius: 1vh;
+
+    outline: none;
+    backface-visibility: hidden;
+}
+.Button:hover{
+    letter-spacing: 0.2vh;
+}
+.Button:hover:before{
+    opacity:1;
+}
+.Button:before{
+	content:"";
+	z-index: -1;
+    opacity: 0;
+    position: absolute;
+    bottom: 0vh;
+    left: 50%;
+    transform: translateX(-50%);
+	transition: 0.3s;
+
+	width: 100%;
+    height: 100%;
+
+	background: repeating-linear-gradient(-55deg,rgba(0, 255, 255, 0.24),rgba(0, 255, 255, 0.24) 1.0vh,rgba(0, 255, 255, 0.28) 1.0vh,rgba(0, 255, 255, 0.28)  2.0vh);
+
+    border-radius: 1vh;
+
+    backface-visibility: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+::-webkit-scrollbar{
+	width: 0.4vh;
+}
+::-webkit-scrollbar-thumb{
+	background: rgba(255,255,255,0.06);
+	border-radius: 1vh;
+}
+::-webkit-scrollbar-track{
+	background-color: rgba(40,40,40,0);
+	border-radius: 1vh;
+}
+::-webkit-scrollbar-thumb:hover{
+	background: rgba(2,160,168,1);
+}

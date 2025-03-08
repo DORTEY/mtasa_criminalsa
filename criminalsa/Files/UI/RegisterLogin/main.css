@@ -1,0 +1,402 @@
+*{
+	--green:rgba(60,255,60,1);
+	--red:rgba(255,60,60,1);
+
+	font-family: "Rajdhani-Bold";
+}
+
+body{
+	margin: 0;
+    padding: 0;
+    overflow: hidden;
+    user-select: none;
+}
+
+.MainUI{
+	position: absolute;
+	top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    height: 100%;
+
+	overflow:  hidden;
+}
+
+.SecondUI{
+	position: absolute;
+
+	top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 70vh;
+    height: 65vh;
+
+	background: repeating-linear-gradient(-55deg,rgba(56, 56, 56, 0.36),rgba(56, 56, 56, 0.36) 1.0vh,rgba(56, 56, 56, 0.4), 1.0vh,rgba(56, 56, 56, 0.4) 2.0vh);
+    background-color:rgb(0, 0, 0);
+
+	border-radius: 1vh;
+}
+
+.Sites{
+	position: absolute;
+	top: 0.6vh;
+	left: 1vh;
+
+	width: auto;
+	max-width: 21.5vh;
+	height: 4.5vh;
+
+	text-align: center;
+	white-space: nowrap;
+
+	border-radius: 2vh;
+}
+.SiteButton{
+	display: inline-block;
+
+	position: relative;
+	top: 0.5vh;
+	width: 3.8vh;
+	height: 3.8vh;
+	margin-left: 1vh;
+	left: -0.5vh;
+
+	color: #fff;
+	font-size: 2.2vh;
+
+	white-space: nowrap;
+
+	background: rgba(0,0,0,0.0);
+
+	border: none;
+	border-radius: 1vh;
+}
+.SiteActive,.SiteButton:hover{
+	color: rgba(2,160,168,1);
+}
+.SiteTooltip{
+	position: absolute;
+	top: -3vh;
+	left: 50%;
+    transform: translateX(-50%);
+
+	padding: 0.4vh;
+
+	font-size: 1.6vh;
+
+	background: rgba(20,20,20,1);
+
+	border-radius: 1vh;
+	opacity: 0;
+
+	pointer-events: none;
+}
+.SiteButton:hover .SiteTooltip{
+	opacity: 1;
+}
+
+
+.ThirdUI{
+	position: absolute;
+
+	top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 45vh;
+    height: 50vh;
+
+	background:rgba(255,255,255,0.04);
+	box-shadow: 0vh 0vh 2vh rgba(0,0,0,0.295);
+
+	border-radius: 1vh;
+}
+
+.ThirdUI input{
+	z-index: 55;
+	position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30vh;
+    height: 3vh;
+	
+	outline: none;
+	border: none;
+	color:#c7c7c7;
+	align-content: center;
+    text-align: center;
+    font-size: 1.6vh;
+	transition: 0.3s;
+	
+	background:rgba(255,255,255,0.04);
+	border-radius: 1vh;
+}
+.ThirdUI input::placeholder{
+	color: #c7c7c7;
+	opacity: 0.5;
+	font-size: 1.6vh;
+}
+.ThirdUI input:hover{
+	letter-spacing: 0.2vh;
+}
+.ThirdUI input:focus{
+	background:rgba(255,255,255,0.08);
+}
+
+
+
+
+.Checkboxes#Languages{
+	position: absolute;
+
+	top: 33vh;
+	left: 5vh;
+}
+.Checkboxes#RememberMe{
+	position: absolute;
+
+	top: 33vh;
+	left: 18vh;
+}
+
+.Checkbox-Text{
+    position: relative;
+
+    font-size:1.4vh;
+}
+.checkbox-item{
+	display:block;
+
+    position: relative;
+	
+	top:0vh;
+    left:0vh;
+
+    width:100%;
+    
+	margin-top:0.4vh;
+    padding:0.2vh;
+    font-size: 1.2vh;
+    color:white;
+}
+.checkbox-text{
+    position: relative;
+
+    left: 2.4vh;
+    top: 0vh;
+	
+    width: 40vh;
+}
+.checkbox-item input{
+    position: absolute;
+    opacity: 0;
+    height: 0;
+    width: 0;
+}
+.checkmark{
+  	position: absolute;
+
+  	top:0;
+  	left:0;
+
+  	height:1.6vh;
+  	width:1.6vh;
+
+  	border-radius:50%;
+  	border:0.1vh solid rgba(255, 255, 255, 0.315);
+  	background:rgba(255, 255, 255, 0.04);
+  	transition: 200ms;
+}
+.checkbox-item:hover input ~ .checkmark{
+    border-color:aqua;
+}
+.checkbox-item input:checked ~ .checkmark{
+    background:rgb(0, 255, 255);
+    box-shadow:#000000b7 0vh 0vh 0vh 0.48vh inset;
+    border-color:aqua;
+}
+.checkmark:after{
+    content: "";
+	display: none;
+
+    position: absolute;
+}
+.checkbox-item input:checked ~ .checkmark:after{
+    display: block;
+
+    border-color:aqua;
+}
+
+
+
+
+.Button{
+	z-index: 50;
+    position: absolute;
+    left: 50%;
+	transform: translateX(-50%);
+	transition: 0.3s;
+
+	width: 30vh;
+	height: 3.5vh;
+
+    text-shadow: 0 0 0.6vh rgb(0, 0, 0);
+    font-size: 1.6vh;
+	color:white;
+
+	background:rgba(255,255,255,0.04);
+
+	border: none;
+	border-radius: 1vh;
+
+    outline: none;
+    backface-visibility: hidden;
+}
+.Button:hover{
+    letter-spacing: 0.2vh;
+}
+.Button:hover:before{
+    opacity:1;
+}
+.Button:before{
+	content:"";
+	z-index: -1;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+	transition: 0.3s;
+
+	width: 100%;
+    height: 100%;
+
+	background: repeating-linear-gradient(-55deg,rgba(0, 255, 255, 0.24),rgba(0, 255, 255, 0.24) 1.0vh,rgba(0, 255, 255, 0.28) 1.0vh,rgba(0, 255, 255, 0.28)  2.0vh);
+
+    border-radius: 1vh;
+
+    backface-visibility: hidden;
+}
+
+.InputIcon{
+	position: absolute;
+	top: 3vh;
+	left: 2.5vh;
+
+	color:#fff;
+	font-size: 3vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.dropdown-container{
+	position: absolute;
+	
+	width:100%;
+	padding-top:4vh;
+	padding-bottom:2vh;
+}
+
+.dropdown-select-button{
+	position: absolute;
+
+	width:100%;
+	text-align: center;
+	background: none;
+	outline: none;
+	border: none;
+	color: #ffffff;
+	font-size:1.3vh;
+}
+
+.dropdown-item-list{
+	z-index: 4;
+	display: none;
+	position: absolute;
+
+	top: 8vh;
+	left: 50%;
+	transform: translateX(-50%);
+
+	width: 100%;
+	height: 18.72vh;
+	overflow: auto;
+	border-radius: 0.4vh;
+}
+
+.dropdown-item-list::-webkit-scrollbar-track{
+	margin-bottom: 0.90vh;
+}
+
+.dropdown-item{
+	position: relative;
+	display: block;
+	top: -0.8vh;
+	margin-top: 0.8vh;
+
+	width: 100%;
+	border-radius: 0.4vh;
+	padding: 1.2vh 2vh 1.2vh 2vh;
+	color: #ffffff;
+	text-align: center;
+	font-size: 1.2vh;
+	background: none;
+	border: none;
+	background: rgba(255,255,255,0.04);
+	transition: 200ms;
+	backface-visibility: hidden;
+	
+}
+
+.dropdown-item:hover{
+	background-color: rgba(255, 255, 255, 0.02);
+}
+
+
+
+
+
+
+::-webkit-scrollbar{
+	width: 0.4vh;
+}
+::-webkit-scrollbar-thumb{
+	background: rgba(255,255,255,0.06);
+	border-radius: 1vh;
+}
+::-webkit-scrollbar-track{
+	background-color: rgba(40,40,40,0);
+	border-radius: 1vh;
+}
+::-webkit-scrollbar-thumb:hover{
+	background: rgba(2,160,168,1);
+}
+
+
+@keyframes shakee {
+	0% {
+		transform: rotate(0deg);
+	}
+	25% {
+		transform: rotate(4deg);
+	}
+	50% {
+		transform: rotate(0eg);
+	}
+	75% {
+		transform: rotate(-4deg);
+	}
+	100% {
+		transform: rotate(0deg);
+	}
+}

@@ -1,0 +1,1018 @@
+body{
+	margin: 0;
+    padding: 0;
+    overflow: hidden;
+    user-select: none;
+}
+
+.SecondUI{
+	position: absolute;
+
+	top: 2vh;
+    left: 2vh;
+    width: 35vh;
+    height: 96vh;
+
+	background: repeating-linear-gradient(-55deg,rgba(56, 56, 56, 0.36),rgba(56, 56, 56, 0.36) 1.0vh,rgba(56, 56, 56, 0.4), 1.0vh,rgba(56, 56, 56, 0.4) 2.0vh);
+    background-color:rgb(0, 0, 0);
+
+	border-radius: 1vh;
+}
+
+/*Left panel*/
+.Navbar{
+    position: absolute;
+
+	top: 8vh;
+	left: 2vh;
+	width: 31vh;
+	height: 80vh;
+
+	background: rgba(255,255,255,0.04);
+	
+	overflow: auto;
+}
+.Navbar-Items{
+	position: relative;
+
+	width: 29.5vh;
+	height: 4vh;
+
+	margin: 0.6vh;
+	transition: 0.3s;
+	
+	color: rgba(200,200,200,1);
+    font-size: 1.5vh;
+	font-family: "Rajdhani-Medium";
+
+	background: rgba(255,255,255,0.06);
+
+	border-left: 0.2vh solid rgba(255,255,255,0.08);
+
+	white-space: nowrap;
+}
+.Navbar-Items:hover,.Navbar-Items-Active{
+	color: rgba(2,160,168,1);
+
+	background: rgba(255,255,255,0.08);
+
+	border-left: 0.4vh solid rgba(2,160,168,1);
+}
+.Navbar-Item-Text{
+	position: absolute;
+
+	top: 50%;
+    left: 1vh;
+	transform: translateY(-50%);
+}
+
+
+
+
+.ThirdUI{
+	position: absolute;
+
+	top: 2vh;
+    left: 40vh;
+    width: 135vh;
+    height: 96vh;
+
+	background: repeating-linear-gradient(-55deg,rgba(56, 56, 56, 0.36),rgba(56, 56, 56, 0.36) 1.0vh,rgba(56, 56, 56, 0.4), 1.0vh,rgba(56, 56, 56, 0.4) 2.0vh);
+    background-color:rgb(0, 0, 0);
+
+	border-radius: 1vh;
+}
+.ThirdUI-Bar{
+	position: absolute;
+	top: 0vh;
+	left: 50%;
+    transform: translateX(-50%);
+
+	width: 100%;
+	height: 6vh;
+
+	background:rgba(255,255,255,0.04);
+    border-width: 0.1vh;
+    border-style: solid;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-image: radial-gradient(#00000000, rgba(255, 255, 255, 0.123), rgba(0, 0, 0, 0)) 1;
+    box-shadow: 0vh 0vh 2vh rgba(0,0,0,0.295);
+
+	border-top-left-radius: 1vh;
+	border-top-right-radius: 1vh;
+}
+.ThirdUI-Title{
+	position: absolute;
+	top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+	
+    align-content: center;
+    text-align: center;
+    font-size: 1.8vh;
+	font-family: "Rajdhani-Bold";
+
+	background:-webkit-linear-gradient(rgb(255, 255, 255), #c7c7c7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    white-space: nowrap;
+}
+.ThirdUI-Title::first-letter{
+    background:-webkit-linear-gradient(rgba(0,242,255,1), rgba(2,160,168,1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/* Redeem */
+.ThirdUI-Bar input{
+	z-index: 55;
+	position: absolute;
+	transition: 0.3s;
+
+	top: 50%;
+	transform: translateY(-50%);
+    left: 16vh;
+    width: 18vh;
+    height: 3vh;
+	
+	outline: none;
+	border: none;
+	color:#c7c7c7;
+	align-content: center;
+    text-align: center;
+    font-size: 1.6vh;
+
+	letter-spacing: 0.08vh;
+	
+	background:rgba(255,255,255,0.04);
+	border-radius: 1vh;
+}
+.ThirdUI-Bar input::placeholder{
+	color: #c7c7c7;
+	opacity: 0.5;
+	font-size: 1.6vh;
+}
+.ThirdUI-Bar input:hover{
+	letter-spacing: 0.04vh;
+}
+.ThirdUI-Bar input:focus{
+	background:rgba(255,255,255,0.08);
+}
+.ThirdUI-Bar-OpenCodeRedeemButton{
+	z-index: 50;
+    position: absolute;
+	transition: 0.3s;
+
+	top: 50%;
+	transform: translateY(-50%);
+	left: 1.8vh;
+
+	width: 13vh;
+	height: 3vh;
+
+    text-shadow: 0 0 0.6vh rgb(0, 0, 0);
+    font-size: 1.7vh;
+	color:#fff;
+
+	background:rgba(255,255,255,0.04);
+
+	border: none;
+	border-radius: 1vh;
+
+    outline: none;
+    backface-visibility: hidden;
+
+	letter-spacing: 0.08vh;
+}
+.ThirdUI-Bar-OpenCodeRedeemButton:hover{
+    letter-spacing: 0.04vh;
+}
+.ThirdUI-Bar-OpenCodeRedeemButton:hover:before{
+    opacity:1;
+}
+.ThirdUI-Bar-OpenCodeRedeemButton:before{
+	content:"";
+	z-index: -1;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+	transition: 0.3s;
+
+	width: 100%;
+    height: 100%;
+
+	background: repeating-linear-gradient(-55deg,rgba(0, 255, 255, 0.24),rgba(0, 255, 255, 0.24) 1.0vh,rgba(0, 255, 255, 0.28) 1.0vh,rgba(0, 255, 255, 0.28)  2.0vh);
+
+    border-radius: 1vh;
+
+    backface-visibility: hidden;
+}
+
+
+.CrimeCoins-Text{
+	position: absolute;
+
+	top: 2.5vh;
+    right: 2vh;
+	transform: translateY(-50%);
+
+    width: 100%;
+
+    text-align: right;
+    font-size: 2vh;
+    font-family: "Rajdhani-Bold";
+
+	background:-webkit-linear-gradient(rgb(255, 255, 255), #c7c7c7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.CrimeCoins-Img{
+	position: relative;
+	
+    top: 1vh;
+    left: -0.4vh;
+
+    width: 3vh;
+}
+
+
+
+
+.ThirdUIList{
+	position: relative;
+
+	top: 9vh;
+    left: 3vh;
+    width: 129vh;
+    height: 84vh;
+
+    background: rgba(255,255,255,0.04);
+
+	overflow: auto;
+	outline: none;
+}
+/*Normal lists*/
+.ThirdUIList-ItemBox{
+	position: relative;
+	float: left;
+	width: 21.4vh;
+	height: 8vh;
+	transition: 0.3s;
+
+	margin: 0.49vh;
+	padding: 0.8vh 1.5vh;
+
+	font-size: 1.5vh;
+	text-align: center;
+	color: rgba(120,120,120,1);
+
+	background: rgba(20,20,20,0.50);
+
+	border: 0.1vh solid rgba(255,255,255,0.20);
+	border-radius: 1vh;
+
+	box-shadow: 0 0 0.5vh rgba(0,0,0,0.50), 0 1.6vh 2.7vh -1.3vh rgba(0,0,0,0);
+}
+.ThirdUIList-ItemTitle{
+	position: absolute;
+	top: 0.6vh;
+    left: 2.5vh;
+
+	font-size: 1.3vh;
+	font-family: "Rajdhani-Bold";
+	text-shadow: 0.2vh 0.2vh 0.5vh rgba(0,0,0,1);
+}
+.ThirdUIList-ItemText{
+	position: absolute;
+	top: 2.5vh;
+    left: 2.5vh;
+
+	font-size: 2vh;
+	font-family: "Rajdhani-Medium";
+	text-shadow: 0.2vh 0.2vh 0.5vh rgba(0,0,0,1);
+}
+.ThirdUIList-ItemText2{
+	position: absolute;
+	bottom: 0.8vh;
+    right: 1vh;
+
+	font-size: 1.3vh;
+	font-family: "Rajdhani-Medium";
+	text-shadow: 0.2vh 0.2vh 0.5vh rgba(0,0,0,1);
+}
+
+
+
+
+.ThirdUI-Navbar{
+    position: absolute;
+
+	top: 9vh;
+	left: 3vh;
+	width: 36vh;
+	height: 84vh;
+
+	background: rgba(255,255,255,0.04);
+	
+	overflow: auto;
+}
+.ThirdUI-Navbar-Items{
+	position: relative;
+
+	width: 34.5vh;
+	height: 4vh;
+
+	margin: 0.6vh;
+	transition: 0.3s;
+	
+	color: rgba(200,200,200,1);
+    font-size: 1.5vh;
+	font-family: "Rajdhani-Medium";
+
+	background: rgba(255,255,255,0.06);
+
+	border-left: 0.2vh solid rgba(255,255,255,0.08);
+
+	white-space: nowrap;
+}
+.ThirdUI-Navbar-Items:hover,.ThirdUI-Navbar-Items-Active{
+	color: rgba(2,160,168,1);
+
+	background: rgba(255,255,255,0.08);
+
+	border-left: 0.4vh solid rgba(2,160,168,1);
+}
+.ThirdUI-Navbar-Item-Text{
+	position: absolute;
+
+	top: 50%;
+    left: 1vh;
+	transform: translateY(-50%);
+}
+
+
+
+
+.ThirdUIList2{
+	position: absolute;
+
+	top: 9vh;
+    left: 42vh;
+    width: 89vh;
+    height: 84vh;
+
+	overflow: auto;
+	outline: none;
+}
+/*Normal lists*/
+.ThirdUIList2-ItemBox-Container{
+	position: absolute;
+	Top: 50%;
+	left: 50%;
+    transform: translate(-50%,-50%);
+
+	width: 76.6vh;
+	height: 68.8vh;
+	max-height: 68.8vh;
+
+	overflow: auto;
+}
+.ThirdUIList2-ItemBox{
+	position: relative;
+	float: left;
+	width: 10.8vh;
+	height: 10.8vh;
+	transition: 0.3s;
+
+	margin: 0.49vh;
+	padding: 0.8vh 1.5vh;
+
+	text-align: center;
+	color: rgba(200,200,200,1);
+	font-size: 1.5vh;
+	font-family: "Rajdhani-Medium";
+
+	background: rgba(255,255,255,0.06);
+
+	border: 0.2vh solid rgba(255,255,255,0.08);
+	border-radius: 1vh;
+}
+.ThirdUIList2-ItemBox:hover{
+	color: rgba(2,160,168,1);
+
+	background: rgba(255,255,255,0.08);
+
+	border-bottom: 0.2vh solid rgba(2,160,168,1);
+}
+.ThirdUIList2-ItemIcon{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+    transform: translate(-50%,-50%);
+	transition: 0.3s;
+
+	font-size: 4vh;
+}
+.ThirdUIList2-ItemBox:hover .ThirdUIList2-ItemIcon{
+	transform: translate(-50%,-50%) scale(0.9);
+}
+.ThirdUIList2-ItemImg{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+    transform: translate(-50%,-50%);
+	transition: 0.3s;
+
+	width: 50%;
+}
+.ThirdUIList2-ItemBox:hover .ThirdUIList2-ItemImg{
+	transform: translate(-50%,-50%) scale(0.9);
+}
+.ThirdUIList2-ItemTitle{
+	position: absolute;
+	top: 0.6vh;
+    left: 0.6vh;
+
+	font-size: 1.2vh;
+}
+.ThirdUIList2-ItemText{
+	position: absolute;
+	bottom: 0.6vh;
+    right: 0.6vh;
+
+	font-size: 1.5vh;
+}
+/*Crates lists*/
+.ThirdUIList2-CratesBox-Container{
+	position: absolute;
+	Top: 50%;
+	left: 50%;
+    transform: translate(-50%,-50%);
+
+	width: 76.6vh;
+	height: 68.8vh;
+	max-height: 68.8vh;
+
+	overflow: auto;
+}
+.ThirdUIList2-CratesBox{
+	position: relative;
+	float: left;
+	width: 14.8vh;
+	height: 12vh;
+	transition: 0.3s;
+
+	margin: 0.49vh;
+	padding: 0.8vh 1.5vh;
+
+	text-align: center;
+	color: rgba(200,200,200,1);
+	font-size: 1.5vh;
+	font-family: "Rajdhani-Medium";
+
+	background: rgba(255,255,255,0.04);
+
+	border: 0.2vh solid rgba(255,255,255,0.06);
+	border-radius: 1vh;
+}
+.ThirdUIList2-CratesBox:hover .ThirdUIList2-CratesBox-Img{
+    transform: translate(-50%,-50%) scale(0.9);
+}
+.ThirdUIList2-CratesBox-Img{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+    transform: translate(-50%,-50%);
+	transition: 0.3s;
+
+	width: 65%;
+
+	filter: drop-shadow(0 0 0.4vh rgba(255,255,255,0.50));
+}
+.ThirdUIList2-CratesBox-Text{
+	position: absolute;
+	top: 0.4vh;
+    left: 50%;
+    transform: translateX(-50%);
+
+	font-size: 1.3vh;
+
+	white-space: nowrap;
+}
+/*Crate spinner stuff*/
+.Crate-Spinner-Container{
+	position: absolute;
+	top: -5vh;
+	left: 50%;
+    transform: translateX(-50%);
+
+	width: 80vh;
+	height: auto;
+}
+.Crate-Raffle{
+	position: relative;
+	left: 50%;
+    transform: translateX(-50%);
+
+	width: 80vh;
+	height: 10vh;
+
+	margin: 6vh auto 3vh auto;
+}
+.Crate-Raffle-Holder{
+	position: absolute;
+	top: 0;
+	left: 50%;
+    transform: translateX(-50%);
+	height: 10vh;
+	width: 90%;
+
+	overflow: hidden;
+}
+.Crate-Raffle-Holder:before {
+	content: "";
+	z-index: 12222225;
+	position: absolute;
+
+	left: 50%;
+	
+	width: 0.3vh;
+	height: 100%;
+
+	background: rgba(0,240,255,1);
+
+	border: none;
+}
+.Crate-Spin{
+	width: 9999999999999vh;
+	max-width: 9999999999999vh;
+	height: 10vh;
+
+	background: rgba(0,0,0,0.30);
+	margin-left: 0;
+	transition: all 8s cubic-bezier(.08,.6,0,1);
+}
+.Crate-Item{
+	display: inline-block;
+	float: left;
+	transition: 0.3s;
+
+	width: 9vh;
+	height: 9vh;
+
+	margin: 0.4vh 0vh 0.04vh 0.4vh;
+	background: rgba(0,240,255,0.10);
+	background-size: 70%;
+   	background-repeat: no-repeat;
+	background-position: center;
+}
+.Crate-Item-Text{
+	position: absolute;
+
+	color: rgba(200,200,200,1);
+    font-size: 1.2vh;
+	font-family: "Rajdhani-Medium";
+}
+.Crate-Item-Win{
+	position: relative;
+
+	top: -0.3vh;
+
+	border: 0.2vh solid rgba(255,215,0,1);
+
+	background-size: 100%;
+}
+.Crate-PossibleRewards-Container{
+	position: absolute;
+	top: 18vh;
+	left: 50%;
+	transform: translateX(-50%);
+
+	width: 80.5vh;
+	max-height: 25.6vh;
+
+	overflow: auto;
+}
+.Crate-PossibleRewards-Items{
+	display: inline-block;
+	position: relative;
+	transition: 0.3s;
+
+	width: 12.3vh;
+	height: 12.3vh;
+
+	margin: 0.1vh;
+
+	background: rgba(255,255,255,0.06);
+
+	border-left: 0.2vh solid rgba(0,240,255,0.50);
+}
+.Crate-PossibleRewards-Item-Img{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+    transform: translate(-50%,-50%);
+	transition: 0.3s;
+
+	width: 12vh;
+
+	filter: drop-shadow(0 0 0.4vh rgba(255,255,255,0.40));
+}
+.Crate-PossibleRewards-Items:hover .Crate-PossibleRewards-Item-Img{
+    transform: translate(-50%,-50%) scale(0.9);
+}
+.Crate-PossibleRewards-Item-Text{
+	position: absolute;
+
+	top: 0.2vh;
+    left: 50%;
+	transform: translateX(-50%);
+
+	color: rgba(200,200,200,1);
+    font-size: 1.2vh;
+	font-family: "Rajdhani-Medium";
+	letter-spacing: 0.08vh;
+
+	white-space: nowrap;
+}
+.Crate-RewardHistory-Container{
+	display: none;
+	position: absolute;
+	top: 50vh;
+	left: 50%;
+	transform: translateX(-50%);
+
+	width: 80.5vh;
+	max-height: 25.6vh;
+
+	overflow: auto;
+}
+.Crate-RewardHistory-Items{
+	display: inline-block;
+	position: relative;
+	transition: 0.3s;
+
+	width: 12.3vh;
+	height: 12.3vh;
+
+	margin: 0.1vh;
+
+	background: rgba(255,255,255,0.06);
+
+	border-left: 0.2vh solid rgba(0,240,255,0.50);
+}
+.Crate-RewardHistory-Item-Img{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+    transform: translate(-50%,-50%);
+
+	width: 12vh;
+
+	filter: drop-shadow(0 0 0.4vh rgba(255,255,255,0.40));
+}
+.Crate-RewardHistory-Item-Text{
+	position: absolute;
+
+	top: 0.2vh;
+    left: 50%;
+	transform: translateX(-50%);
+
+	color: rgba(200,200,200,1);
+    font-size: 1.2vh;
+	font-family: "Rajdhani-Medium";
+	letter-spacing: 0.08vh;
+
+	white-space: nowrap;
+}
+.Crate-RewardHistory-Item-Text2{
+	position: absolute;
+
+	bottom: 0vh;
+    right: 0vh;
+
+	color: rgba(200,200,200,1);
+    font-size: 1.5vh;
+	font-family: "Rajdhani-Medium";
+
+	white-space: nowrap;
+}
+
+.CrateSpinnerButton{
+	z-index: 50;
+    position: absolute;
+	transition: 0.3s;
+
+	top: 11vh;
+	left: 50%;
+    transform: translateX(-50%);
+
+	width: 20vh;
+	height: 3.5vh;
+
+    text-shadow: 0 0 0.6vh rgb(0, 0, 0);
+    font-size: 1.6vh;
+	color:#fff;
+
+	background:rgba(255,255,255,0.04);
+
+	border: none;
+	border-radius: 1vh;
+
+    outline: none;
+    backface-visibility: hidden;
+}
+.CrateSpinnerButton:hover{
+    letter-spacing: 0.2vh;
+}
+.CrateSpinnerButton:hover:before{
+    opacity:1;
+}
+.CrateSpinnerButton:before{
+	content:"";
+	z-index: -1;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+	transition: 0.3s;
+
+	width: 100%;
+    height: 100%;
+
+	background: repeating-linear-gradient(-55deg,rgba(0, 255, 255, 0.24),rgba(0, 255, 255, 0.24) 1.0vh,rgba(0, 255, 255, 0.28) 1.0vh,rgba(0, 255, 255, 0.28)  2.0vh);
+
+    border-radius: 1vh;
+
+    backface-visibility: hidden;
+}
+
+
+
+
+
+.Achievement-Container{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+    transform: translate(-50%,-50%);
+
+	width: 65vh;
+	height: 65vh;
+
+	background: rgba(255,255,255,0.04);
+
+	box-shadow: 0 0 0.5vh rgba(0,242,255,0.50), 0 1.6vh 2.7vh -1.3vh rgba(0,0,0,0);
+
+	border: 0.1vh solid rgba(0,242,255,0.50);
+}
+.Achievement-Title{
+	position: absolute;
+	top: 25vh;
+	left: 50%;
+    transform: translateX(-50%);
+
+    align-content: center;
+    text-align: center;
+    font-size: 3.5vh;
+	font-family: "Rajdhani-Bold";
+	text-transform: uppercase;
+	text-shadow: 0.2vh 0.2vh 1vh rgba(0,0,0,1);
+
+	background:-webkit-linear-gradient(rgba(0,242,255,1), rgba(2,160,168,1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    white-space: nowrap;
+}
+.Achievement-Description{
+	position: absolute;
+	top: 35vh;
+	left: 50%;
+    transform: translateX(-50%);
+
+	align-content: center;
+    text-align: center;
+    font-size: 2vh;
+	font-family: "Rajdhani-Bold";
+	text-shadow: 0.2vh 0.2vh 1vh rgba(0,0,0,1);
+
+	background:-webkit-linear-gradient(rgb(255, 255, 255), #c7c7c7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    white-space: nowrap;
+}
+.Achievement-Img{
+	position: absolute;
+	top: 3vh;
+	left: 50%;
+    transform: translateX(-50%);
+
+	width: 20vh;
+	height: 20vh;
+
+	filter: drop-shadow(0 0 0.4vh rgba(255,255,255,0.50));
+}
+.Achievement-Container2{
+	position: absolute;
+	Top: 50vh;
+	left: 50%;
+    transform: translateX(-50%);
+
+	width: 46vh;
+	height: 10vh;
+	background: rgba(0,0,0,0.50);
+
+	box-shadow: 0 0 0.5vh rgba(0,0,0,0.50), 0 1.6vh 2.7vh -1.3vh rgba(0,0,0,0);
+}
+
+.AchievementBar{
+	position: absolute;
+	top: 47vh;
+	left: 50%;
+    transform: translateX(-50%) skew(-20deg,0deg);
+	filter: blur(0.05vh);
+
+	width: 45vh;
+	height: 2vh;
+
+    background: repeating-linear-gradient(to right, rgba(0,0,0,0.50), rgba(0,0,0,0.50) 1.8vh, transparent 1.8vh, transparent 2.276vh);
+}
+.AchievementBar-Progress{
+	position: relative;
+	
+	height: 100%;
+
+	background: repeating-linear-gradient(to right, rgb(0,240,255), rgb(0,240,255) 1.8vh,transparent 1.8vh, transparent 2.276vh);
+}
+.AchievementBar-Text{
+	position: absolute;
+	top: 45vh;
+	left: 50%;
+    transform: translateX(-50%);
+
+	font-size: 1.6vh;
+	text-align: center;
+	color: rgba(200,200,200,1);
+	font-family: "Rajdhani-Medium";
+	text-shadow: 0.2vh 0.2vh 1vh rgba(0,0,0,1);
+}
+
+.AchievementReached-Text{
+	position: absolute;
+	top: 55vh;
+	left: 50%;
+    transform: translateX(-50%);
+
+	font-size: 2.3vh;
+	text-align: center;
+	color: rgba(200,200,200,1);
+	font-family: "Rajdhani-Bold";
+	text-shadow: 0.2vh 0.2vh 1vh rgba(0,0,0,1);
+
+	white-space: nowrap;
+}
+
+.Achievement-Sites{
+	position: absolute;
+	top: 0.6vh;
+	left: 1vh;
+
+	width: auto;
+	max-width: 21.5vh;
+	height: 8.5vh;
+
+	text-align: center;
+	white-space: nowrap;
+
+	border-radius: 2vh;
+}
+.Achievement-SiteButton{
+	display: inline-block;
+
+	position: relative;
+	top: 0.5vh;
+	width: 7.5vh;
+	height: 7.5vh;
+	margin-left: 1vh;
+	left: -0.5vh;
+
+	color: #fff;
+	font-size: 2.2vh;
+
+	white-space: nowrap;
+
+	background: rgba(0,0,0,0.20);
+
+	border: none;
+	border-radius: 1vh;
+}
+.Achievement-SiteButton-Icon{
+	position: absolute;
+	top: 1vh;
+	left: 50%;
+    transform: translateX(-50%);
+
+	font-size: 2.2vh;
+}
+.Achievement-SiteButton-Img{
+	position: absolute;
+	top: 0.5vh;
+	left: 50%;
+    transform: translateX(-50%);
+
+	width: 3.2vh;
+}
+.Achievement-SiteButton-Reward{
+	position: absolute;
+	top: 5vh;
+	left: 50%;
+    transform: translateX(-50%);
+
+	color: #fff;
+	font-size: 1.3vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+.Button{
+	z-index: 50;
+    position: absolute;
+	transition: 0.3s;
+
+	width: 25vh;
+	height: 3.5vh;
+
+    text-shadow: 0 0 0.6vh rgb(0, 0, 0);
+    font-size: 1.6vh;
+	color:#fff;
+
+	background:rgba(255,255,255,0.04);
+
+	border: none;
+	border-radius: 1vh;
+
+    outline: none;
+    backface-visibility: hidden;
+}
+.Button:hover{
+    letter-spacing: 0.2vh;
+}
+.Button:hover:before{
+    opacity:1;
+}
+.Button:before{
+	content:"";
+	z-index: -1;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+	transition: 0.3s;
+
+	width: 100%;
+    height: 100%;
+
+	background: repeating-linear-gradient(-55deg,rgba(0, 255, 255, 0.24),rgba(0, 255, 255, 0.24) 1.0vh,rgba(0, 255, 255, 0.28) 1.0vh,rgba(0, 255, 255, 0.28)  2.0vh);
+
+    border-radius: 1vh;
+
+    backface-visibility: hidden;
+}
+
+
+
+
+
+
+
+
+::-webkit-scrollbar{
+	width: 0.4vh;
+}
+::-webkit-scrollbar-thumb{
+	background: rgba(255,255,255,0.06);
+	border-radius: 1vh;
+}
+::-webkit-scrollbar-track{
+	background-color: rgba(40,40,40,0);
+	border-radius: 1vh;
+}
+::-webkit-scrollbar-thumb:hover{
+	background: rgba(2,160,168,1);
+}

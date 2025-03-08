@@ -1,0 +1,94 @@
+* {
+    font-family: 'Rajdhani';
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size:0;
+    overflow:hidden;
+    font-family: 'Rajdhani';
+    user-select: none;
+}
+
+.speedometer-container {
+	position: absolute;
+	right:10vh;
+	bottom:10vh;
+	font-size:2vh;
+	zoom:0.09;
+}
+
+.speedometer {
+	/* background: repeating-linear-gradient(-55deg,rgba(56, 56, 56, 0.36),rgba(56, 56, 56, 0.36) 1.0vh,rgba(56, 56, 56, 0.4), 1.0vh,rgba(56, 56, 56, 0.4) 2.0vh);*/
+    background-color:rgba(0, 0, 0,0.65); 
+	
+	position: relative;
+	border-radius:50%;
+}
+.speedometer .speedNobe{
+	position:absolute;
+	width:100%;
+	z-index:10;	
+	transition: all 200ms;
+}
+.speedometer .speedPosition {
+	position: absolute;
+
+	background-color:rgba(0, 0, 0,0.65); 
+	text-align: center;
+	line-height: 82vh;
+	font-size: 22vh;
+	font-family:arial;
+	font-weight:bold;
+	border-radius: 50%;
+	color: #FFF;
+	box-shadow: 0 0 0.3vh 0.3vh rgba(0,0,0,1);
+}
+.speedometer .fonts{
+	/* font-family:arial;
+	font-weight:bold;
+	font-size:2vh;
+	width:100%;
+	text-align:center; */
+}
+
+.speedometer .speedNobe div{
+	background: rgba(200,200,200,1);
+	position: absolute;
+	height: 100%;
+	top: 0;
+}
+.speedometer .numb,.nob{
+	transition: opacity 200ms;
+	position: absolute;
+	opacity: 0.5;
+}
+.speedometer .nob{
+	background:#eee;
+	box-shadow: 0 0 0.2vh 0.1vh #eee;
+}
+.speedometer .numb{
+	color:#eee;
+	text-align: left;
+	overflow: hidden;
+	opacity: 0.5;
+	font-family: arial;
+	font-size: 12vh;
+	font-weight: bold;
+}
+.speedometer .nob.bright{
+	opacity: 1;
+}
+.speedometer .nob.danger{
+	background:#FF113A;
+	box-shadow: 0 0 0.2vh 0.1vh #FF113A;
+}
+.speedometer .numb.bright{
+	opacity: 1;
+}
+.speedometer .numb.danger{
+	color: #FF113A;
+
+	backface-visibility: hidden;
+}

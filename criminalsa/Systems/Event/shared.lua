@@ -1,0 +1,72 @@
+EventStands={
+    ["Halloween"]={
+        Ped={60001,2414.7,-1407.2,24.2,90, "Halloween event"},--ID,x,y,z,rotZ
+        Ped2={60001,912.3,-1235.1,17.2,0, "Halloween event"},--ID,x,y,z,rotZ
+        Items={
+            {
+                Item="PresentHalloween",
+                PreviewObject=nil,
+            },
+            {
+                Item="Vehicle_442",
+                PreviewObject=nil,
+            },
+            {
+                Item="Vehicle_474",
+                PreviewObject=nil,
+            },
+            {
+                Item="Vehicle_534",
+                PreviewObject=nil,
+            },
+        },
+    },
+    ["Christmas"]={
+        Ped={60501,2414.7,-1407.2,24.2,90, "Christmas event"},--ID,x,y,z,rotZ
+        Ped2={60501,912.3,-1235.1,17.2,0, "Christmas event"},--ID,x,y,z,rotZ
+        Items={
+            {
+                Item="PresentChristmas",
+                PreviewObject=nil,
+            },
+            {
+                Item="Vehicle_434",
+                PreviewObject=nil,
+            },
+            {
+                Item="Vehicle_603",
+                PreviewObject=nil,
+            },
+            {
+                Item="Vehicle_22000",
+                PreviewObject=nil,
+            },
+        },
+    },
+};
+
+EventSettings={
+    Rewards={
+        ["Christmas"]={
+            Payday=1,
+        },
+        ["Halloween"]={
+            Payday=1,
+        },
+        ["Easter"]={
+            Payday=1,
+        },
+    },
+    Prices={
+        --halloween
+        ["PresentHalloween"]={10,10},
+        ["Vehicle_442"]={45,45},
+        ["Vehicle_474"]={70,70},
+        ["Vehicle_534"]={100,100},
+        --christmas
+        ["PresentChristmas"]={10,10},
+        ["Vehicle_434"]={45,45},
+        ["Vehicle_603"]={75,75},
+        ["Vehicle_22000"]={100,100},
+    },
+}

@@ -1,0 +1,56 @@
+body{
+	margin: 0;
+    padding: 0;
+    overflow: hidden;
+    user-select: none;
+}
+
+.SecondUI{
+	position: absolute;
+
+	top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    height: 100%;
+
+	background: radial-gradient(circle 140vh at 50% 50%, rgba(0, 0, 0, 0.35), rgb(0,0,0,1));
+	background-color: rgba(30,30,30,0.50);
+
+	box-shadow: inset 0 0 5vh rgba(0,0,0,0.60), 0 1.6vh 2.7vh -1.3vh rgba(0,0,0,0);
+}
+/*Farm stuff*/
+.FarmArea{
+	position: absolute;
+	top: 15vh;
+    left: 50%;
+    transform: translateX(-50%);
+
+	width: 60vh;
+	height: 90vh;
+
+	filter: drop-shadow(0vh 0vh 2vh rgba(0,0,0,0.45));
+}
+
+.ItemSpawnArea{
+	position: absolute;
+	top: 30vh;
+    left: 50%;
+    transform: translateX(-50%);
+
+	width: 40vh;
+	height: 40vh;
+
+	/* background: rgba(0,0,0,0.0); */
+
+	border-radius: 5vh;
+}
+
+.Item{
+	position: absolute;
+
+	width: 7.5vh;
+	height: 7.5vh;
+
+	filter: drop-shadow(0vh 0vh 1.5vh rgba(0,0,0,0.65));
+}

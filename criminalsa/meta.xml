@@ -1,0 +1,879 @@
+<meta>
+	<info author="DORTEY aka DALE(huarycane)" type="gamemode"/>
+	<min_mta_version client="1.6.0-9.21765" server="1.6.0-9.21765" />
+	<sync_map_element_data>false</sync_map_element_data>
+	<download_priority_group>-1</download_priority_group>
+	<oop>true</oop>
+	
+
+	<export function="isLoggedin" type="client"/><!-- for voice -->
+
+	<include resource="newmodels" />
+	<include resource="realdriveby" />
+	<include resource="voice" />
+	
+	<!--//Start firstly-->
+	<script src="Systems/classlib.lua" type="shared" cache="false" />
+	<script src="server.lua" type="server" />
+	<script src="client.lua" type="client" cache="false" />
+	<script src="shared.lua" type="client" cache="false" />
+	<script src="shared.lua" type="server" />
+
+	<script src="Systems/Other/Downloader/client.lua" type="client" cache="false" />
+	<script src="Systems/Other/Downloader/server.lua" type="server" />
+
+	<script src="Systems/language.lua" type="client" cache="false" />
+	<script src="Systems/language.lua" type="server" />
+
+	<!-- FILES -->
+	<map src="Files/Maps/Area51.map" />
+	<map src="Files/Maps/Fixes.map" />
+	<map src="Files/Maps/Hideout.map" />
+	<map src="Files/Maps/Vehicleshops.map" />
+	<map src="Files/Maps/Trader.map" />
+	<map src="Files/Maps/Clothingstores.map" />
+	<map src="Files/Maps/Construction.map" />
+	<!-- <map src="Files/Maps/SFPD.map" /> -->
+
+	<map src="Files/Maps/Robs/Container.map" />
+	<map src="Files/Maps/Robs/Jeweler.map" />
+	<map src="Files/Maps/Robs/Burgershot.map" />
+	<map src="Files/Maps/Robs/Tankstaion.map" />
+	<map src="Files/Maps/Robs/CluckinBell.map" />
+	<map src="Files/Maps/Robs/Oilrig.map" />
+	<map src="Files/Maps/Robs/69c.map" />
+	<map src="Files/Maps/Robs/BettingOffice.map" />
+	<map src="Files/Maps/Robs/Binco.map" />
+	<map src="Files/Maps/Robs/Agencia.map" />
+	<map src="Files/Maps/Robs/Bowling.map" />
+	<map src="Files/Maps/Robs/Warehouse.map" />
+
+	<map src="Files/Maps/Jobs/Coconut.map" />
+	<map src="Files/Maps/Jobs/Logistic.map" />
+
+
+	<file src="Files/Traintracks.dat" />
+	<file src="Files/Images/Downloader/Loading.png" />
+	<file src="Files/Images/Downloader/1.png" />
+	<file src="Files/Images/Downloader/2.png" />
+	<file src="Files/Images/Downloader/Characters/1.png" />
+	<file src="Files/Images/Downloader/Characters/2.png" />
+	<file src="Files/Images/Downloader/Characters/3.png" />
+	<file src="Files/Images/Downloader/Characters/4.png" />
+	<file src="Files/Images/Downloader/Characters/5.png" />
+	<file src="Files/Images/Downloader/Characters/6.png" />
+	<file src="Files/Images/Downloader/Characters/7.png" />
+	<file src="Files/Images/Downloader/Characters/8.png" />
+	<file src="Files/Images/Downloader/Characters/9.png" />
+
+	<file src="Files/Images/Transparent.png" />
+	<file src="Files/Images/White.png" />
+	<file src="Files/Images/Discord.png" />
+	<file src="Files/Images/Youtube.png" />
+	<file src="Files/Images/Logo.png" />
+	<file src="Files/Images/Deliver.png" />
+	<file src="Files/Images/Tropy.png" />
+
+	<file src="Files/Images/Crates/WeaponSkins.png" download="false" />
+	<file src="Files/Images/Crates/PedSkins.png" download="false" />
+	<file src="Files/Images/Crates/Wheels.png" download="false" />
+	<file src="Files/Images/Crates/Items/Cash.png" download="false" />
+	<file src="Files/Images/Crates/Items/CrimeCoin.png" download="false" />
+	<file src="Files/Images/Crates/Items/CrimeCoinX2.png" download="false" />
+	<file src="Files/Images/Crates/Items/Weapon_24_4.png" download="false" />
+	<file src="Files/Images/Crates/Items/Weapon_24_6.png" download="false" />
+	<file src="Files/Images/Crates/Items/Weapon_24_7.png" download="false" />
+	<file src="Files/Images/Crates/Items/Weapon_24_8.png" download="false" />
+	<file src="Files/Images/Crates/Items/Weapon_25_2.png" download="false" />
+	<file src="Files/Images/Crates/Items/Weapon_25_3.png" download="false" />
+	<file src="Files/Images/Crates/Items/Weapon_25_5.png" download="false" />
+	<file src="Files/Images/Crates/Items/Weapon_25_12.png" download="false" />
+	<file src="Files/Images/Crates/Items/Weapon_25_15.png" download="false" />
+	<file src="Files/Images/Crates/Items/Weapon_25_16.png" download="false" />
+	<file src="Files/Images/Crates/Items/Weapon_25_17.png" download="false" />
+	<file src="Files/Images/Crates/Items/Weapon_30_23.png" download="false" />
+	<file src="Files/Images/Crates/Items/Weapon_30_24.png" download="false" />
+	<file src="Files/Images/Crates/Items/Weapon_30_25.png" download="false" />
+	<file src="Files/Images/Crates/Items/Weapon_30_26.png" download="false" />
+	<file src="Files/Images/Crates/Items/Weapon_31_4.png" download="false" />
+	<file src="Files/Images/Crates/Items/Weapon_31_5.png" download="false" />
+	<file src="Files/Images/Crates/Items/Weapon_31_6.png" download="false" />
+	<file src="Files/Images/Crates/Items/Weapon_34_4.png" download="false" />
+	<file src="Files/Images/Crates/Items/Weapon_34_6.png" download="false" />
+	<file src="Files/Images/Crates/Items/Weapon_34_12.png" download="false" />
+	<file src="Files/Images/Crates/Items/Weapon_34_13.png" download="false" />
+	<file src="Files/Images/Crates/Items/Weapon_34_14.png" download="false" />
+	<file src="Files/Images/Crates/Items/Weapon_34_15.png" download="false" />
+	<file src="Files/Images/Crates/Items/Weapon_34_16.png" download="false" />
+	<file src="Files/Images/Crates/Items/Weapon_34_17.png" download="false" />
+	<file src="Files/Images/Crates/Items/Skin_30019.png" download="false" />
+	<file src="Files/Images/Crates/Items/Skin_30023.png" download="false" />
+	<file src="Files/Images/Crates/Items/Skin_30029.png" download="false" />
+	<file src="Files/Images/Crates/Items/Skin_30030.png" download="false" />
+	<file src="Files/Images/Crates/Items/Skin_30032.png" download="false" />
+	<file src="Files/Images/Crates/Items/Skin_30035.png" download="false" />
+	<file src="Files/Images/Crates/Items/Skin_40017.png" download="false" />
+
+	<file src="Files/Images/Items/Bitcoin.png" download="false" />
+	<file src="Files/Images/Items/Nitro.png" download="false" />
+	<file src="Files/Images/Items/Pickaxe.png" download="false" />
+	<file src="Files/Images/Items/Crowbar.png" download="false" />
+	<file src="Files/Images/Items/CrowbarExtended.png" download="false" />
+	<file src="Files/Images/Items/Repairkit.png" download="false" />
+	<file src="Files/Images/Items/Medikit.png" download="false" />
+	<file src="Files/Images/Items/GoldIngot.png" download="false" />
+	<file src="Files/Images/Items/IronIngot.png" download="false" />
+	<file src="Files/Images/Items/Stone.png" download="false" />
+	<file src="Files/Images/Items/Coal.png" download="false" />
+	<file src="Files/Images/Items/Diamond.png" download="false" />
+	<file src="Files/Images/Items/Emerald.png" download="false" />
+	<file src="Files/Images/Items/Ruby.png" download="false" />
+	<file src="Files/Images/Items/Orange.png" download="false" />
+	<file src="Files/Images/Items/Apple.png" download="false" />
+	<file src="Files/Images/Items/Pear.png" download="false" />
+	<file src="Files/Images/Items/Coconut.png" download="false" />
+	<file src="Files/Images/Items/Dynamite.png" download="false" />
+	<file src="Files/Images/Items/Cannabis.png" download="false" />
+	<file src="Files/Images/Items/CrimeCoin.png" download="false" />
+	<file src="Files/Images/Items/ItemBooster1.png" download="false" />
+	<file src="Files/Images/Items/ItemBooster2.png" download="false" />
+	<file src="Files/Images/Items/ItemBooster3.png" download="false" />
+	<file src="Files/Images/Items/ItemBooster4.png" download="false" />
+	<file src="Files/Images/Items/ItemBooster5.png" download="false" />
+	<file src="Files/Images/Items/MoneyBooster1.png" download="false" />
+	<file src="Files/Images/Items/MoneyBooster2.png" download="false" />
+	<file src="Files/Images/Items/MoneyBooster3.png" download="false" />
+	<file src="Files/Images/Items/MoneyBooster4.png" download="false" />
+	<file src="Files/Images/Items/MoneyBooster5.png" download="false" />
+	<file src="Files/Images/Items/VehicleCoupon1.png" download="false" />
+	<file src="Files/Images/Items/VehicleCoupon2.png" download="false" />
+	<file src="Files/Images/Items/VehicleCoupon3.png" download="false" />
+	<file src="Files/Images/Items/VehicleCoupon4.png" download="false" />
+	<file src="Files/Images/Items/VehicleCoupon5.png" download="false" />
+	<file src="Files/Images/Items/SkinCoupon1.png" download="false" />
+	<file src="Files/Images/Items/SkinCoupon2.png" download="false" />
+	<file src="Files/Images/Items/SkinCoupon3.png" download="false" />
+	<file src="Files/Images/Items/SkinCoupon4.png" download="false" />
+	<file src="Files/Images/Items/SkinCoupon5.png" download="false" />
+	<file src="Files/Images/Items/PresentChristmas.png" download="false" />
+	<file src="Files/Images/Items/PresentHalloween.png" download="false" />
+	<file src="Files/Images/Items/Wheel_1877.png" download="false" />
+	<file src="Files/Images/Items/Wheel_1878.png" download="false" />
+	<file src="Files/Images/Items/Wheel_1879.png" download="false" />
+	<file src="Files/Images/Items/Wheel_1880.png" download="false" />
+	<file src="Files/Images/Items/Wheel_1881.png" download="false" />
+	<file src="Files/Images/Items/Wheel_1882.png" download="false" />
+	<file src="Files/Images/Items/Wheel_1901.png" download="false" />
+	<file src="Files/Images/Items/Wheel_1902.png" download="false" />
+	<file src="Files/Images/Items/Wheel_1903.png" download="false" />
+	<file src="Files/Images/Items/Wheel_1904.png" download="false" />
+	<file src="Files/Images/Items/Wheel_1911.png" download="false" />
+	<file src="Files/Images/Items/Wheel_1921.png" download="false" />
+	<file src="Files/Images/Items/Wheel_1930.png" download="false" />
+	<file src="Files/Images/Items/Wheel_1931.png" download="false" />
+	<file src="Files/Images/Items/Wheel_1932.png" download="false" />
+	<file src="Files/Images/Items/Wheel_1933.png" download="false" />
+	<file src="Files/Images/Items/Wheel_1940.png" download="false" />
+	<!-- EVENT -->
+	<file src="Files/Images/Items/Vehicle_442.png" download="false" />
+	<file src="Files/Images/Items/Vehicle_474.png" download="false" />
+	<file src="Files/Images/Items/Vehicle_534.png" download="false" />
+	<file src="Files/Images/Items/Vehicle_434.png" download="false" />
+	<file src="Files/Images/Items/Vehicle_603.png" download="false" />
+	<file src="Files/Images/Items/Vehicle_22000.png" download="false" />
+
+	<file src="Files/Images/Radar/Map.png" download="false" />
+	<file src="Files/Images/Radar/Blips/Arrow.png" download="false" />
+	<file src="Files/Images/Radar/Blips/0.png" download="false" />
+	<file src="Files/Images/Radar/Blips/0_down.png" download="false" />
+	<file src="Files/Images/Radar/Blips/0_up.png" download="false" />
+	<file src="Files/Images/Radar/Blips/1.png" download="false" />
+	<file src="Files/Images/Radar/Blips/2.png" download="false" />
+	<file src="Files/Images/Radar/Blips/3.png" download="false" />
+	<file src="Files/Images/Radar/Blips/4.png" download="false" />
+	<file src="Files/Images/Radar/Blips/5.png" download="false" />
+	<file src="Files/Images/Radar/Blips/6.png" download="false" />
+	<file src="Files/Images/Radar/Blips/7.png" download="false" />
+	<file src="Files/Images/Radar/Blips/8.png" download="false" />
+	<file src="Files/Images/Radar/Blips/9.png" download="false" />
+	<file src="Files/Images/Radar/Blips/10.png" download="false" />
+	<file src="Files/Images/Radar/Blips/11.png" download="false" />
+	<file src="Files/Images/Radar/Blips/12.png" download="false" />
+	<file src="Files/Images/Radar/Blips/13.png" download="false" />
+	<file src="Files/Images/Radar/Blips/14.png" download="false" />
+	<file src="Files/Images/Radar/Blips/15.png" download="false" />
+	<file src="Files/Images/Radar/Blips/16.png" download="false" />
+	<file src="Files/Images/Radar/Blips/17.png" download="false" />
+	<file src="Files/Images/Radar/Blips/18.png" download="false" />
+	<file src="Files/Images/Radar/Blips/19.png" download="false" />
+	<file src="Files/Images/Radar/Blips/20.png" download="false" />
+	<file src="Files/Images/Radar/Blips/21.png" download="false" />
+
+	<file src="Files/Images/Hitmarker/1.png" download="false" />
+	<file src="Files/Images/Hitmarker/2.png" download="false" />
+	<file src="Files/Images/Hitmarker/3.png" download="false" />
+	<file src="Files/Images/Hitmarker/4.png" download="false" />
+
+	<file src="Files/Images/Job/Tree.png" download="false" />
+	<file src="Files/Images/Job/Orange.png" download="false" />
+	<file src="Files/Images/Job/Apple.png" download="false" />
+	<file src="Files/Images/Job/Pear.png" download="false" />
+	<file src="Files/Images/Job/Coconut.png" download="false" />
+
+	<file src="Files/Images/Bloodscreen/1.png" download="false" />
+	<file src="Files/Images/Bloodscreen/2.png" download="false" />
+	<file src="Files/Images/Bloodscreen/3.png" download="false" />
+
+	<file src="Files/Audio/Wasted.mp3" download="false" />
+	<file src="Files/Audio/Generator.mp3" download="false" />
+	<file src="Files/Audio/Graphiccard.mp3" download="false" />
+	<file src="Files/Audio/Washingmachine.mp3" download="false" />
+	<file src="Files/Audio/Pickaxe.mp3" download="false" />
+
+	<file src="Files/Audio/Downloader/Music.mp3" />
+
+	<file src="Files/Audio/Infobox/error.mp3" download="false" />
+	<file src="Files/Audio/Infobox/info.mp3" download="false" />
+	<file src="Files/Audio/Infobox/money.mp3" download="false" />
+	<file src="Files/Audio/Infobox/success.mp3" download="false" />
+	<file src="Files/Audio/Infobox/warning.mp3" download="false" />
+	<file src="Files/Audio/Infobox/achievement.mp3" download="false" />
+
+	<file src="Files/Audio/Horns/1.mp3" download="false" />
+	<file src="Files/Audio/Horns/2.mp3" download="false" />
+	<file src="Files/Audio/Horns/3.mp3" download="false" />
+	<file src="Files/Audio/Horns/4.mp3" download="false" />
+	<file src="Files/Audio/Horns/5.mp3" download="false" />
+	<file src="Files/Audio/Horns/6.mp3" download="false" />
+	<file src="Files/Audio/Horns/7.mp3" download="false" />
+	<file src="Files/Audio/Horns/8.mp3" download="false" />
+	<file src="Files/Audio/Horns/9.mp3" download="false" />
+
+	<file src="Files/Audio/Hitbell/1.mp3" download="false" />
+	<file src="Files/Audio/Hitbell/2.mp3" download="false" />
+	<file src="Files/Audio/Hitbell/3.mp3" download="false" />
+	<file src="Files/Audio/Hitbell/4.mp3" download="false" />
+	<file src="Files/Audio/Hitbell/5.mp3" download="false" />
+	<file src="Files/Audio/Hitbell/6.mp3" download="false" />
+	<file src="Files/Audio/Hitbell/7.mp3" download="false" />
+
+
+	<file src="Files/Textures/mta-helper.fx" />
+	<file src="Files/Textures/Main.fx" />
+	<file src="Files/Textures/Paintjob.fx" />
+	<file src="Files/Textures/Weapons.fx" />
+	<file src="Files/Textures/Crosshair.fx" />
+	<file src="Files/Textures/Lights.fx" />
+	<file src="Files/Textures/VehicleWindowTintFix.fx" />
+	<file src="Files/Textures/Snow/mta-helper.fx" />
+	<file src="Files/Textures/Snow/Ground.fx" />
+	<file src="Files/Textures/Snow/Trees.fx" />
+	<file src="Files/Textures/Snow/TreesNaughty.fx" />
+	<file src="Files/Textures/Snow/Snow.dds" />
+
+	<file src="Files/Textures/Hideout.png" />
+	<file src="Files/Textures/Hideout2.png" />
+	<file src="Files/Textures/VehicleWindowGlassFix.png" />
+
+	<file src="Files/Textures/Paintjobs/500000.png" download="false" />
+	<file src="Files/Textures/Paintjobs/4.png" download="false" />
+	<file src="Files/Textures/Paintjobs/5.png" download="false" />
+	<file src="Files/Textures/Paintjobs/6.png" download="false" />
+	<file src="Files/Textures/Paintjobs/7.png" download="false" />
+	<file src="Files/Textures/Paintjobs/8.png" download="false" />
+	<file src="Files/Textures/Paintjobs/9.png" download="false" />
+	<file src="Files/Textures/Paintjobs/10.png" download="false" />
+	<file src="Files/Textures/Paintjobs/11.png" download="false" />
+	<file src="Files/Textures/Paintjobs/12.png" download="false" />
+	<file src="Files/Textures/Paintjobs/13.png" download="false" />
+	<file src="Files/Textures/Paintjobs/14.png" download="false" />
+	<file src="Files/Textures/Paintjobs/15.png" download="false" />
+	<file src="Files/Textures/Paintjobs/16.png" download="false" />
+	<file src="Files/Textures/Paintjobs/17.png" download="false" />
+	<file src="Files/Textures/Paintjobs/18.png" download="false" />
+	<file src="Files/Textures/Paintjobs/19.png" download="false" />
+	<file src="Files/Textures/Paintjobs/20.png" download="false" />
+	<file src="Files/Textures/Paintjobs/21.png" download="false" />
+	<file src="Files/Textures/Paintjobs/22.png" download="false" />
+	<file src="Files/Textures/Paintjobs/23.png" download="false" />
+	<file src="Files/Textures/Paintjobs/24.png" download="false" />
+	<file src="Files/Textures/Paintjobs/25.png" download="false" />
+	<file src="Files/Textures/Paintjobs/26.png" download="false" />
+	<file src="Files/Textures/Paintjobs/27.png" download="false" />
+	<file src="Files/Textures/Paintjobs/28.png" download="false" />
+	<file src="Files/Textures/Paintjobs/29.png" download="false" />
+	<file src="Files/Textures/Paintjobs/30.png" download="false" />
+	<file src="Files/Textures/Paintjobs/31.png" download="false" />
+	<file src="Files/Textures/Paintjobs/32.png" download="false" />
+	<file src="Files/Textures/Paintjobs/33.png" download="false" />
+	<file src="Files/Textures/Paintjobs/34.png" download="false" />
+	<file src="Files/Textures/Paintjobs/35.png" download="false" />
+	<file src="Files/Textures/Paintjobs/36.png" download="false" />
+	<file src="Files/Textures/Paintjobs/37.png" download="false" />
+	<file src="Files/Textures/Paintjobs/38.png" download="false" />
+	<file src="Files/Textures/Paintjobs/39.png" download="false" />
+	<file src="Files/Textures/Paintjobs/40.png" download="false" />
+	<file src="Files/Textures/Paintjobs/41.png" download="false" />
+	<file src="Files/Textures/Paintjobs/42.png" download="false" />
+	<file src="Files/Textures/Paintjobs/43.png" download="false" />
+	<file src="Files/Textures/Paintjobs/44.png" download="false" />
+	<file src="Files/Textures/Paintjobs/45.png" download="false" />
+	<file src="Files/Textures/Paintjobs/46.png" download="false" />
+	<file src="Files/Textures/Paintjobs/47.png" download="false" />
+	<file src="Files/Textures/Paintjobs/48.png" download="false" />
+	<file src="Files/Textures/Paintjobs/49.png" download="false" />
+	<file src="Files/Textures/Paintjobs/50.png" download="false" />
+	<file src="Files/Textures/Paintjobs/51.png" download="false" />
+	<file src="Files/Textures/Paintjobs/52.png" download="false" />
+	<file src="Files/Textures/Paintjobs/53.png" download="false" />
+	<file src="Files/Textures/Paintjobs/54.png" download="false" />
+	<file src="Files/Textures/Paintjobs/55.png" download="false" />
+	<file src="Files/Textures/Paintjobs/56.png" download="false" />
+	<file src="Files/Textures/Paintjobs/57.png" download="false" />
+	<file src="Files/Textures/Paintjobs/58.png" download="false" />
+	<file src="Files/Textures/Paintjobs/59.png" download="false" />
+	<file src="Files/Textures/Paintjobs/60.png" download="false" />
+	<file src="Files/Textures/Paintjobs/61.png" download="false" />
+	<file src="Files/Textures/Paintjobs/62.png" download="false" />
+	<file src="Files/Textures/Paintjobs/63.png" download="false" />
+	<file src="Files/Textures/Paintjobs/64.png" download="false" />
+	<file src="Files/Textures/Paintjobs/65.png" download="false" />
+	<file src="Files/Textures/Paintjobs/66.png" download="false" />
+	<file src="Files/Textures/Paintjobs/67.png" download="false" />
+	<file src="Files/Textures/Paintjobs/68.png" download="false" />
+	<file src="Files/Textures/Paintjobs/69.png" download="false" />
+	<file src="Files/Textures/Paintjobs/70.png" download="false" />
+	<file src="Files/Textures/Paintjobs/71.png" download="false" />
+	<file src="Files/Textures/Paintjobs/72.png" download="false" />
+	<file src="Files/Textures/Paintjobs/73.png" download="false" />
+	<file src="Files/Textures/Paintjobs/74.png" download="false" />
+	<file src="Files/Textures/Paintjobs/75.png" download="false" />
+	<file src="Files/Textures/Paintjobs/76.png" download="false" />
+	<file src="Files/Textures/Paintjobs/77.png" download="false" />
+	<file src="Files/Textures/Paintjobs/78.png" download="false" />
+	<file src="Files/Textures/Paintjobs/79.png" download="false" />
+	<file src="Files/Textures/Paintjobs/80.png" download="false" />
+	<file src="Files/Textures/Paintjobs/81.png" download="false" />
+	<file src="Files/Textures/Paintjobs/82.png" download="false" />
+	<file src="Files/Textures/Paintjobs/83.png" download="false" />
+	<file src="Files/Textures/Paintjobs/84.png" download="false" />
+	<file src="Files/Textures/Paintjobs/85.png" download="false" />
+	<file src="Files/Textures/Paintjobs/86.png" download="false" />
+	<file src="Files/Textures/Paintjobs/87.png" download="false" />
+	<file src="Files/Textures/Paintjobs/88.png" download="false" />
+	<file src="Files/Textures/Paintjobs/89.png" download="false" />
+	<file src="Files/Textures/Paintjobs/90.png" download="false" />
+	<file src="Files/Textures/Paintjobs/91.png" download="false" />
+	<file src="Files/Textures/Paintjobs/92.png" download="false" />
+	<file src="Files/Textures/Paintjobs/93.png" download="false" />
+	<file src="Files/Textures/Paintjobs/94.png" download="false" />
+	<file src="Files/Textures/Paintjobs/95.png" download="false" />
+	<file src="Files/Textures/Paintjobs/96.png" download="false" />
+	<file src="Files/Textures/Paintjobs/97.png" download="false" />
+	<file src="Files/Textures/Paintjobs/98.png" download="false" />
+	<file src="Files/Textures/Paintjobs/99.png" download="false" />
+	<file src="Files/Textures/Paintjobs/100.png" download="false" />
+	<file src="Files/Textures/Paintjobs/101.png" download="false" />
+	<file src="Files/Textures/Paintjobs/102.png" download="false" />
+	<file src="Files/Textures/Paintjobs/103.png" download="false" />
+	<file src="Files/Textures/Paintjobs/104.png" download="false" />
+	<file src="Files/Textures/Paintjobs/105.png" download="false" />
+	<file src="Files/Textures/Paintjobs/106.png" download="false" />
+	<file src="Files/Textures/Paintjobs/107.png" download="false" />
+	<file src="Files/Textures/Paintjobs/108.png" download="false" />
+	<file src="Files/Textures/Paintjobs/109.png" download="false" />
+	<file src="Files/Textures/Paintjobs/110.png" download="false" />
+	<file src="Files/Textures/Paintjobs/111.png" download="false" />
+	<file src="Files/Textures/Paintjobs/112.png" download="false" />
+	<file src="Files/Textures/Paintjobs/113.png" download="false" />
+	<file src="Files/Textures/Paintjobs/114.png" download="false" />
+	<file src="Files/Textures/Paintjobs/115.png" download="false" />
+	<file src="Files/Textures/Paintjobs/116.png" download="false" />
+	<file src="Files/Textures/Paintjobs/117.png" download="false" />
+	<file src="Files/Textures/Paintjobs/118.png" download="false" />
+	<file src="Files/Textures/Paintjobs/119.png" download="false" />
+	<file src="Files/Textures/Paintjobs/120.png" download="false" />
+	<file src="Files/Textures/Paintjobs/121.png" download="false" />
+	<file src="Files/Textures/Paintjobs/122.png" download="false" />
+
+	<file src="Files/Textures/Lights/0.png" download="false" />
+	<file src="Files/Textures/Lights/1.png" download="false" />
+	<file src="Files/Textures/Lights/2.png" download="false" />
+	<file src="Files/Textures/Lights/3.png" download="false" />
+	<file src="Files/Textures/Lights/4.png" download="false" />
+	<file src="Files/Textures/Lights/5.png" download="false" />
+	<file src="Files/Textures/Lights/6.png" download="false" />
+	<file src="Files/Textures/Lights/7.png" download="false" />
+	<file src="Files/Textures/Lights/8.png" download="false" />
+	<file src="Files/Textures/Lights/9.png" download="false" />
+	<file src="Files/Textures/Lights/10.png" download="false" />
+	<file src="Files/Textures/Lights/11.png" download="false" />
+	<file src="Files/Textures/Lights/12.png" download="false" />
+	<file src="Files/Textures/Lights/13.png" download="false" />
+	<file src="Files/Textures/Lights/14.png" download="false" />
+	<file src="Files/Textures/Lights/15.png" download="false" />
+	<file src="Files/Textures/Lights/16.png" download="false" />
+	<file src="Files/Textures/Lights/17.png" download="false" />
+	<file src="Files/Textures/Lights/18.png" download="false" />
+
+
+	<file src="Files/Textures/Weapons/24/1.png" download="false" />
+	<file src="Files/Textures/Weapons/24/2.png" download="false" />
+	<file src="Files/Textures/Weapons/24/3.png" download="false" />
+	<file src="Files/Textures/Weapons/24/4.png" download="false" />
+	<file src="Files/Textures/Weapons/24/5.png" download="false" />
+	<file src="Files/Textures/Weapons/24/6.png" download="false" />
+	<file src="Files/Textures/Weapons/24/7.png" download="false" />
+	<file src="Files/Textures/Weapons/24/8.png" download="false" />
+
+	<file src="Files/Textures/Weapons/25/1.png" download="false" />
+	<file src="Files/Textures/Weapons/25/2.png" download="false" />
+	<file src="Files/Textures/Weapons/25/3.png" download="false" />
+	<file src="Files/Textures/Weapons/25/4.png" download="false" />
+	<file src="Files/Textures/Weapons/25/5.png" download="false" />
+	<file src="Files/Textures/Weapons/25/6.png" download="false" />
+	<file src="Files/Textures/Weapons/25/7.png" download="false" />
+	<file src="Files/Textures/Weapons/25/8.png" download="false" />
+	<file src="Files/Textures/Weapons/25/9.png" download="false" />
+	<file src="Files/Textures/Weapons/25/10.png" download="false" />
+	<file src="Files/Textures/Weapons/25/11.png" download="false" />
+	<file src="Files/Textures/Weapons/25/12.png" download="false" />
+	<file src="Files/Textures/Weapons/25/13.png" download="false" />
+	<file src="Files/Textures/Weapons/25/14.png" download="false" />
+	<file src="Files/Textures/Weapons/25/15.png" download="false" />
+	<file src="Files/Textures/Weapons/25/16.png" download="false" />
+	<file src="Files/Textures/Weapons/25/17.png" download="false" />
+	<file src="Files/Textures/Weapons/25/18.png" download="false" />
+
+	<file src="Files/Textures/Weapons/29/1.png" download="false" />
+	<file src="Files/Textures/Weapons/29/2.png" download="false" />
+	<file src="Files/Textures/Weapons/29/3.png" download="false" />
+	<file src="Files/Textures/Weapons/29/4.png" download="false" />
+	<file src="Files/Textures/Weapons/29/5.png" download="false" />
+
+	<file src="Files/Textures/Weapons/30/1.png" download="false" />
+	<file src="Files/Textures/Weapons/30/2.png" download="false" />
+	<file src="Files/Textures/Weapons/30/3.png" download="false" />
+	<file src="Files/Textures/Weapons/30/4.png" download="false" />
+	<file src="Files/Textures/Weapons/30/5.png" download="false" />
+	<file src="Files/Textures/Weapons/30/6.png" download="false" />
+	<file src="Files/Textures/Weapons/30/7.png" download="false" />
+	<file src="Files/Textures/Weapons/30/8.png" download="false" />
+	<file src="Files/Textures/Weapons/30/9.png" download="false" />
+	<file src="Files/Textures/Weapons/30/10.png" download="false" />
+	<file src="Files/Textures/Weapons/30/11.png" download="false" />
+	<file src="Files/Textures/Weapons/30/12.png" download="false" />
+	<file src="Files/Textures/Weapons/30/13.png" download="false" />
+	<file src="Files/Textures/Weapons/30/14.png" download="false" />
+	<file src="Files/Textures/Weapons/30/15.png" download="false" />
+	<file src="Files/Textures/Weapons/30/16.png" download="false" />
+	<file src="Files/Textures/Weapons/30/17.png" download="false" />
+	<file src="Files/Textures/Weapons/30/18.png" download="false" />
+	<file src="Files/Textures/Weapons/30/19.png" download="false" />
+	<file src="Files/Textures/Weapons/30/20.png" download="false" />
+	<file src="Files/Textures/Weapons/30/21.png" download="false" />
+	<file src="Files/Textures/Weapons/30/22.png" download="false" />
+	<file src="Files/Textures/Weapons/30/23.png" download="false" />
+	<file src="Files/Textures/Weapons/30/24.png" download="false" />
+	<file src="Files/Textures/Weapons/30/25.png" download="false" />
+	<file src="Files/Textures/Weapons/30/26.png" download="false" />
+
+	<file src="Files/Textures/Weapons/31/1.png" download="false" />
+	<file src="Files/Textures/Weapons/31/2.png" download="false" />
+	<file src="Files/Textures/Weapons/31/3.png" download="false" />
+	<file src="Files/Textures/Weapons/31/4.png" download="false" />
+	<file src="Files/Textures/Weapons/31/5.png" download="false" />
+	<file src="Files/Textures/Weapons/31/6.png" download="false" />
+	<file src="Files/Textures/Weapons/31/7.png" download="false" />
+	<file src="Files/Textures/Weapons/31/8.png" download="false" />
+	<file src="Files/Textures/Weapons/31/9.png" download="false" />
+	<file src="Files/Textures/Weapons/31/10.png" download="false" />
+	<file src="Files/Textures/Weapons/31/11.png" download="false" />
+	<file src="Files/Textures/Weapons/31/12.png" download="false" />
+	<file src="Files/Textures/Weapons/31/13.png" download="false" />
+	<file src="Files/Textures/Weapons/31/14.png" download="false" />
+	<file src="Files/Textures/Weapons/31/15.png" download="false" />
+	<file src="Files/Textures/Weapons/31/16.png" download="false" />
+	<file src="Files/Textures/Weapons/31/17.png" download="false" />
+	<file src="Files/Textures/Weapons/31/18.png" download="false" />
+	<file src="Files/Textures/Weapons/31/19.png" download="false" />
+	<file src="Files/Textures/Weapons/31/20.png" download="false" />
+	<file src="Files/Textures/Weapons/31/21.png" download="false" />
+	<file src="Files/Textures/Weapons/31/22.png" download="false" />
+	<file src="Files/Textures/Weapons/31/23.png" download="false" />
+	<file src="Files/Textures/Weapons/31/24.png" download="false" />
+
+	<file src="Files/Textures/Weapons/34/1.png" download="false" />
+	<file src="Files/Textures/Weapons/34/2.png" download="false" />
+	<file src="Files/Textures/Weapons/34/3.png" download="false" />
+	<file src="Files/Textures/Weapons/34/4.png" download="false" />
+	<file src="Files/Textures/Weapons/34/5.png" download="false" />
+	<file src="Files/Textures/Weapons/34/6.png" download="false" />
+	<file src="Files/Textures/Weapons/34/7.png" download="false" />
+	<file src="Files/Textures/Weapons/34/8.png" download="false" />
+	<file src="Files/Textures/Weapons/34/9.png" download="false" />
+	<file src="Files/Textures/Weapons/34/10.png" download="false" />
+	<file src="Files/Textures/Weapons/34/11.png" download="false" />
+	<file src="Files/Textures/Weapons/34/12.png" download="false" />
+	<file src="Files/Textures/Weapons/34/13.png" download="false" />
+	<file src="Files/Textures/Weapons/34/14.png" download="false" />
+	<file src="Files/Textures/Weapons/34/15.png" download="false" />
+	<file src="Files/Textures/Weapons/34/16.png" download="false" />
+	<file src="Files/Textures/Weapons/34/17.png" download="false" />
+
+
+	<file src="Files/Textures/Crosshairs/siteM16(0).png" download="false" />
+	<file src="Files/Textures/Crosshairs/siteM16(1).png" download="false" />
+	<file src="Files/Textures/Crosshairs/siteM16(2).png" download="false" />
+	<file src="Files/Textures/Crosshairs/siteM16(3).png" download="false" />
+	<file src="Files/Textures/Crosshairs/siteM16(4).png" download="false" />
+	<file src="Files/Textures/Crosshairs/siteM16(5).png" download="false" />
+	<file src="Files/Textures/Crosshairs/siteM16(6).png" download="false" />
+	<file src="Files/Textures/Crosshairs/siteM16(7).png" download="false" />
+	<file src="Files/Textures/Crosshairs/siteM16(8).png" download="false" />
+	<file src="Files/Textures/Crosshairs/siteM16(9).png" download="false" />
+	<file src="Files/Textures/Crosshairs/siteM16(10).png" download="false" />
+	<file src="Files/Textures/Crosshairs/siteM16(11).png" download="false" />
+	<file src="Files/Textures/Crosshairs/siteM16(12).png" download="false" />
+	<file src="Files/Textures/Crosshairs/siteM16(13).png" download="false" />
+	<file src="Files/Textures/Crosshairs/siteM16(14).png" download="false" />
+	<file src="Files/Textures/Crosshairs/siteM16(15).png" download="false" />
+	<file src="Files/Textures/Crosshairs/siteM16(16).png" download="false" />
+	<file src="Files/Textures/Crosshairs/siteM16(17).png" download="false" />
+	<file src="Files/Textures/Crosshairs/siteM16(18).png" download="false" />
+	<file src="Files/Textures/Crosshairs/siteM16(19).png" download="false" />
+	<file src="Files/Textures/Crosshairs/siteM16(20).png" download="false" />
+	<file src="Files/Textures/Crosshairs/siteM16(21).png" download="false" />
+	<file src="Files/Textures/Crosshairs/siteM16(22).png" download="false" />
+	<file src="Files/Textures/Crosshairs/siteM16(23).png" download="false" />
+	<file src="Files/Textures/Crosshairs/siteM16(24).png" download="false" />
+	<file src="Files/Textures/Crosshairs/siteM16(25).png" download="false" />
+	<file src="Files/Textures/Crosshairs/siteM16(26).png" download="false" />
+	<file src="Files/Textures/Crosshairs/siteM16(27).png" download="false" />
+	<file src="Files/Textures/Crosshairs/siteM16(28).png" download="false" />
+	<file src="Files/Textures/Crosshairs/siteM16(29).png" download="false" />
+	<file src="Files/Textures/Crosshairs/siteM16(30).png" download="false" />
+	<file src="Files/Textures/Crosshairs/siteM16(31).png" download="false" />
+	<file src="Files/Textures/Crosshairs/siteM16(32).png" download="false" />
+	<file src="Files/Textures/Crosshairs/siteM16(33).png" download="false" />
+	<file src="Files/Textures/Crosshairs/siteM16(34).png" download="false" />
+	<file src="Files/Textures/Crosshairs/siteM16(35).png" download="false" />
+	<file src="Files/Textures/Crosshairs/siteM16(36).png" download="false" />
+	<file src="Files/Textures/Crosshairs/siteM16(37).png" download="false" />
+	<file src="Files/Textures/Crosshairs/siteM16(38).png" download="false" />
+	<file src="Files/Textures/Crosshairs/siteM16(39).png" download="false" />
+	<file src="Files/Textures/Crosshairs/siteM16(40).png" download="false" />
+	<file src="Files/Textures/Crosshairs/siteM16(41).png" download="false" />
+	<file src="Files/Textures/Crosshairs/siteM16(42).png" download="false" />
+	<file src="Files/Textures/Crosshairs/siteM16(43).png" download="false" />
+	<file src="Files/Textures/Crosshairs/siteM16(44).png" download="false" />
+	<file src="Files/Textures/Crosshairs/siteM16(45).png" download="false" />
+	<file src="Files/Textures/Crosshairs/siteM16(46).png" download="false" />
+	<file src="Files/Textures/Crosshairs/siteM16(47).png" download="false" />
+	<file src="Files/Textures/Crosshairs/siteM16(48).png" download="false" />
+	<file src="Files/Textures/Crosshairs/siteM16(49).png" download="false" />
+	<file src="Files/Textures/Crosshairs/siteM16(50).png" download="false" />
+	<file src="Files/Textures/Crosshairs/siteM16(51).png" download="false" />
+	<file src="Files/Textures/Crosshairs/siteM16(52).png" download="false" />
+	<file src="Files/Textures/Crosshairs/SNIPERcrosshair(0).png" download="false" />
+	<file src="Files/Textures/Crosshairs/SNIPERcrosshair(1).png" download="false" />
+	<file src="Files/Textures/Crosshairs/SNIPERcrosshair(2).png" download="false" />
+	<file src="Files/Textures/Crosshairs/SNIPERcrosshair(3).png" download="false" />
+	<file src="Files/Textures/Crosshairs/SNIPERcrosshair(4).png" download="false" />
+	<file src="Files/Textures/Crosshairs/SNIPERcrosshair(5).png" download="false" />
+	<file src="Files/Textures/Crosshairs/SNIPERcrosshair(6).png" download="false" />
+	<file src="Files/Textures/Crosshairs/SNIPERcrosshair(7).png" download="false" />
+	<file src="Files/Textures/Crosshairs/SNIPERcrosshair(8).png" download="false" />
+	<file src="Files/Textures/Crosshairs/SNIPERcrosshair(9).png" download="false" />
+	<file src="Files/Textures/Crosshairs/SNIPERcrosshair(10).png" download="false" />
+	<file src="Files/Textures/Crosshairs/SNIPERcrosshair(11).png" download="false" />
+	<file src="Files/Textures/Crosshairs/SNIPERcrosshair(12).png" download="false" />
+	<file src="Files/Textures/Crosshairs/SNIPERcrosshair(13).png" download="false" />
+	<file src="Files/Textures/Crosshairs/SNIPERcrosshair(14).png" download="false" />
+	<file src="Files/Textures/Crosshairs/SNIPERcrosshair(15).png" download="false" />
+	<file src="Files/Textures/Crosshairs/SNIPERcrosshair(16).png" download="false" />
+	<file src="Files/Textures/Crosshairs/SNIPERcrosshair(17).png" download="false" />
+	<file src="Files/Textures/Crosshairs/SNIPERcrosshair(18).png" download="false" />
+	<file src="Files/Textures/Crosshairs/SNIPERcrosshair(19).png" download="false" />
+	<file src="Files/Textures/Crosshairs/SNIPERcrosshair(20).png" download="false" />
+	<file src="Files/Textures/Crosshairs/SNIPERcrosshair(21).png" download="false" />
+
+	<file src="Files/Models/Vehicles/402.dff" />
+	<file src="Files/Models/Vehicles/402.txd" />
+	<file src="Files/Models/Vehicles/411.dff" />
+	<file src="Files/Models/Vehicles/411.txd" />
+	<file src="Files/Models/Vehicles/415.dff" />
+	<file src="Files/Models/Vehicles/415.txd" />
+	<file src="Files/Models/Vehicles/426.dff" />
+	<file src="Files/Models/Vehicles/426.txd" />
+	<file src="Files/Models/Vehicles/434.dff" />
+	<file src="Files/Models/Vehicles/434.txd" />
+	<file src="Files/Models/Vehicles/438.dff" />
+	<file src="Files/Models/Vehicles/438.txd" />
+	<file src="Files/Models/Vehicles/470.dff" />
+	<file src="Files/Models/Vehicles/474.dff" />
+	<file src="Files/Models/Vehicles/474.txd" />
+	<file src="Files/Models/Vehicles/494.dff" />
+	<file src="Files/Models/Vehicles/494.txd" />
+	<file src="Files/Models/Vehicles/522.dff" />
+	<file src="Files/Models/Vehicles/522.txd" />
+	<file src="Files/Models/Vehicles/580.dff" />
+	<file src="Files/Models/Vehicles/580.txd" />
+	<file src="Files/Models/Vehicles/451.dff" />
+	<file src="Files/Models/Vehicles/451.txd" />
+	<file src="Files/Models/Vehicles/603.dff" />
+	<file src="Files/Models/Vehicles/603.txd" />
+	
+	<file src="Files/Models/Containers/1_Open.col" download="false" />
+	<file src="Files/Models/Containers/1_Open.dff" download="false" />
+	<file src="Files/Models/Containers/1_Open.txd" download="false" />
+	<file src="Files/Models/Containers/1_Closed.col" download="false" />
+	<file src="Files/Models/Containers/1_Closed.dff" download="false" />
+	<file src="Files/Models/Containers/1_Closed.txd" download="false" />
+
+	<file src="Files/Models/Other/ConstructionSF.col" download="false" />
+	<file src="Files/Models/Other/ConstructionSF.dff" download="false" />
+	<file src="Files/Models/Other/ConstructionSF.txd" download="false" />
+	<file src="Files/Models/Other/ConstructionSF_2.col" download="false" />
+	<file src="Files/Models/Other/ConstructionSF_2.dff" download="false" />
+	<file src="Files/Models/Other/Nitro.dff" />
+	<file src="Files/Models/Other/Nitro.txd" />
+	<file src="Files/Models/Other/EasterEgg.col" />
+	<file src="Files/Models/Other/EasterEgg.dff" />
+	<file src="Files/Models/Other/EasterEgg.txd" />
+	<file src="Files/Models/Other/Pumpkin.col" />
+	<file src="Files/Models/Other/Pumpkin.dff" />
+	<file src="Files/Models/Other/Pumpkin.txd" />
+	<file src="Files/Models/Other/XmasBox.col" />
+	<file src="Files/Models/Other/XmasBox.dff" />
+	<file src="Files/Models/Other/XmasBox.txd" />
+	<file src="Files/Models/Other/ATM.col" />
+	<file src="Files/Models/Other/ATM.dff" />
+	<file src="Files/Models/Other/ATM.txd" />
+
+	<file src="Files/Models/Buildings/Suburban.col" download="false" />
+	<file src="Files/Models/Buildings/Suburban.dff" download="false" />
+	<file src="Files/Models/Buildings/Suburban.txd" download="false" />
+	<file src="Files/Models/Buildings/CarhouseLS.col" download="false" />
+	<file src="Files/Models/Buildings/CarhouseLS.dff" download="false" />
+	<file src="Files/Models/Buildings/CarhouseLS.txd" download="false" />
+	<file src="Files/Models/Buildings/ConstructionLS.col" download="false" />
+	<file src="Files/Models/Buildings/ConstructionLS.dff" download="false" />
+	<file src="Files/Models/Buildings/6thStreet.col" />
+	<file src="Files/Models/Buildings/6thStreet.dff" />
+	<file src="Files/Models/Buildings/6thStreet.txd" />
+	<file src="Files/Models/Buildings/Hideout.col" />
+	<file src="Files/Models/Buildings/Hideout.dff" />
+	<file src="Files/Models/Buildings/Bunker.col" />
+	<file src="Files/Models/Buildings/Bunker.dff" />
+	<file src="Files/Models/Buildings/Bunker.txd" />
+	<file src="Files/Models/Buildings/Tent.col" download="false" />
+	<file src="Files/Models/Buildings/Tent.dff" download="false" />
+	<file src="Files/Models/Buildings/Tent.txd" download="false" />
+	<file src="Files/Models/Buildings/Tent2.col" download="false" />
+	<file src="Files/Models/Buildings/Tent2.dff" download="false" />
+	<file src="Files/Models/Buildings/Tent2.txd" download="false" />
+	<file src="Files/Models/Buildings/Logistic.col" />
+	<file src="Files/Models/Buildings/Logistic.dff" />
+	<file src="Files/Models/Buildings/Logistic.txd" />
+	<file src="Files/Models/Buildings/Warehouse.col" download="false" />
+	<file src="Files/Models/Buildings/Warehouse.dff" download="false" />
+	<file src="Files/Models/Buildings/Warehouse.txd" download="false" />
+	<file src="Files/Models/Buildings/PublicGarage.col" download="false" />
+	<file src="Files/Models/Buildings/PublicGarage.dff" download="false" />
+	<file src="Files/Models/Buildings/PublicGarage.txd" download="false" />
+
+	<file src="Files/Models/Buildings/Garages/1.col" download="false" />
+	<file src="Files/Models/Buildings/Garages/1.dff" download="false" />
+	<file src="Files/Models/Buildings/Garages/1.txd" download="false" />
+	<file src="Files/Models/Buildings/Garages/2.col" download="false" />
+	<file src="Files/Models/Buildings/Garages/2.dff" download="false" />
+	<file src="Files/Models/Buildings/Garages/2.txd" download="false" />
+	<file src="Files/Models/Buildings/Garages/3.col" download="false" />
+	<file src="Files/Models/Buildings/Garages/3.dff" download="false" />
+	<file src="Files/Models/Buildings/Garages/3.txd" download="false" />
+	<file src="Files/Models/Buildings/Garages/4.col" download="false" />
+	<file src="Files/Models/Buildings/Garages/4.dff" download="false" />
+	<file src="Files/Models/Buildings/Garages/4.txd" download="false" />
+	<file src="Files/Models/Buildings/Robs/Jeweler/Model.col" download="false" />
+	<file src="Files/Models/Buildings/Robs/Jeweler/Model.zaw" download="false" />
+	<file src="Files/Models/Buildings/Robs/Jeweler/Model.txd" download="false" />
+	<file src="Files/Models/Buildings/Robs/Burgershot/LS.col" download="false" />
+	<file src="Files/Models/Buildings/Robs/Burgershot/LS.dff" download="false" />
+	<file src="Files/Models/Buildings/Robs/Burgershot/LS.txd" download="false" />
+	<file src="Files/Models/Buildings/Robs/Burgershot/LS2.col" download="false" />
+	<file src="Files/Models/Buildings/Robs/Burgershot/LS2.dff" download="false" />
+	<file src="Files/Models/Buildings/Robs/Burgershot/LS2.txd" download="false" />
+	<file src="Files/Models/Buildings/Robs/Tankstations/Mulholland.col" download="false" />
+	<file src="Files/Models/Buildings/Robs/Tankstations/Mulholland.dff" download="false" />
+	<file src="Files/Models/Buildings/Robs/Tankstations/Mulholland.txd" download="false" />
+	<file src="Files/Models/Buildings/Robs/Tankstations/Dillimore.col" download="false" />
+	<file src="Files/Models/Buildings/Robs/Tankstations/Dillimore.dff" download="false" />
+	<file src="Files/Models/Buildings/Robs/Tankstations/Dillimore.txd" download="false" />
+	<file src="Files/Models/Buildings/Robs/Tankstations/Idlewood.col" download="false" />
+	<file src="Files/Models/Buildings/Robs/Tankstations/Idlewood.dff" download="false" />
+	<file src="Files/Models/Buildings/Robs/Tankstations/Idlewood.txd" download="false" />
+	<file src="Files/Models/Buildings/Robs/CluckinBell/Willowfield.col" download="false" />
+	<file src="Files/Models/Buildings/Robs/CluckinBell/Willowfield.dff" download="false" />
+	<file src="Files/Models/Buildings/Robs/CluckinBell/Willowfield.txd" download="false" />
+	<file src="Files/Models/Buildings/Robs/Binco/Ganton.col" download="false" />
+	<file src="Files/Models/Buildings/Robs/Binco/Ganton.dff" download="false" />
+	<file src="Files/Models/Buildings/Robs/Binco/Ganton.txd" download="false" />
+	<file src="Files/Models/Buildings/Robs/Binco/Rodeo.col" download="false" />
+	<file src="Files/Models/Buildings/Robs/Binco/Rodeo.dff" download="false" />
+	<file src="Files/Models/Buildings/Robs/Binco/Rodeo.txd" download="false" />
+	<file src="Files/Models/Buildings/Robs/Regular/69c.col" download="false" />
+	<file src="Files/Models/Buildings/Robs/Regular/69c.dff" download="false" />
+	<file src="Files/Models/Buildings/Robs/Regular/69c.txd" download="false" />
+	<file src="Files/Models/Buildings/Robs/Regular/BettingOffice.col" download="false" />
+	<file src="Files/Models/Buildings/Robs/Regular/BettingOffice.dff" download="false" />
+	<file src="Files/Models/Buildings/Robs/Regular/BettingOffice.txd" download="false" />
+	<file src="Files/Models/Buildings/Robs/Regular/Pawn.col" download="false" />
+	<file src="Files/Models/Buildings/Robs/Regular/Pawn.dff" download="false" />
+	<file src="Files/Models/Buildings/Robs/Regular/Pawn.txd" download="false" />
+	<file src="Files/Models/Buildings/Robs/Regular/Bar.col" download="false" />
+	<file src="Files/Models/Buildings/Robs/Regular/Bar.dff" download="false" />
+	<file src="Files/Models/Buildings/Robs/Regular/Bar.txd" download="false" />
+	<file src="Files/Models/Buildings/Robs/Regular/Agencia.col" download="false" />
+	<file src="Files/Models/Buildings/Robs/Regular/Agencia.dff" download="false" />
+	<file src="Files/Models/Buildings/Robs/Regular/Agencia.txd" download="false" />
+	<file src="Files/Models/Buildings/Robs/Regular/Bowling.col" download="false" />
+	<file src="Files/Models/Buildings/Robs/Regular/Bowling.dff" download="false" />
+	<file src="Files/Models/Buildings/Robs/Regular/Bowling.txd" download="false" />
+
+	<file src="Files/Models/Buildings/Hideouts/1.col" download="false" />
+	<file src="Files/Models/Buildings/Hideouts/1.dff" download="false" />
+	<file src="Files/Models/Buildings/Hideouts/1.txd" download="false" />
+
+	<file src="Files/Models/Generators/1.col" download="false" />
+	<file src="Files/Models/Generators/1.dff" download="false" />
+	<file src="Files/Models/Generators/1.txd" download="false" />
+	<file src="Files/Models/Generators/2.col" download="false" />
+	<file src="Files/Models/Generators/2.dff" download="false" />
+	<file src="Files/Models/Generators/2.txd" download="false" />
+
+	<file src="Files/Models/Weapons/348.dff" download="false" />
+	<file src="Files/Models/Weapons/348.txd" download="false" />
+	<file src="Files/Models/Weapons/349.dff" download="false" />
+	<file src="Files/Models/Weapons/349.txd" download="false" />
+	<file src="Files/Models/Weapons/353.dff" download="false" />
+	<file src="Files/Models/Weapons/353.txd" download="false" />
+	<file src="Files/Models/Weapons/355.dff" download="false" />
+	<file src="Files/Models/Weapons/355.txd" download="false" />
+	<file src="Files/Models/Weapons/356.dff" download="false" />
+	<file src="Files/Models/Weapons/356.txd" download="false" />
+	<file src="Files/Models/Weapons/358.dff" download="false" />
+	<file src="Files/Models/Weapons/358.txd" download="false" />
+
+	<file src="Files/Models/Wearable/Pickaxe.dff" download="false" />
+	<file src="Files/Models/Wearable/Pickaxe.txd" download="false" />
+	<file src="Files/Models/Wearable/Dufflebag.dff" download="false" />
+	<file src="Files/Models/Wearable/Dufflebag.txd" download="false" />
+
+
+	<file src="Files/Models/Wheels/Atomic1.dff" download="false" />
+	<file src="Files/Models/Wheels/Atomic1.txd" download="false" />
+	<file src="Files/Models/Wheels/Atomic2.dff" download="false" />
+	<file src="Files/Models/Wheels/Atomic2.txd" download="false" />
+	<file src="Files/Models/Wheels/Atomic3.dff" download="false" />
+	<file src="Files/Models/Wheels/Atomic3.txd" download="false" />
+	<file src="Files/Models/Wheels/Atomic4.dff" download="false" />
+	<file src="Files/Models/Wheels/Atomic4.txd" download="false" />
+	<file src="Files/Models/Wheels/Atomic5.dff" download="false" />
+	<file src="Files/Models/Wheels/Atomic5.txd" download="false" />
+	<file src="Files/Models/Wheels/Atomic6.dff" download="false" />
+	<file src="Files/Models/Wheels/Atomic6.txd" download="false" />
+	<file src="Files/Models/Wheels/Atomic7.dff" download="false" />
+	<file src="Files/Models/Wheels/Atomic7.txd" download="false" />
+	<file src="Files/Models/Wheels/Atomic8.dff" download="false" />
+	<file src="Files/Models/Wheels/Atomic8.txd" download="false" />
+	<file src="Files/Models/Wheels/Atomic9.dff" download="false" />
+	<file src="Files/Models/Wheels/Atomic9.txd" download="false" />
+	<file src="Files/Models/Wheels/Atomic10.dff" download="false" />
+	<file src="Files/Models/Wheels/Atomic10.txd" download="false" />
+	<file src="Files/Models/Wheels/Atomic11.dff" download="false" />
+	<file src="Files/Models/Wheels/Atomic11.txd" download="false" />
+	<file src="Files/Models/Wheels/Atomic12.dff" download="false" />
+	<file src="Files/Models/Wheels/Atomic12.txd" download="false" />
+	<file src="Files/Models/Wheels/Atomic13.dff" download="false" />
+	<file src="Files/Models/Wheels/Atomic13.txd" download="false" />
+	<file src="Files/Models/Wheels/Atomic14.dff" download="false" />
+	<file src="Files/Models/Wheels/Atomic14.txd" download="false" />
+	<file src="Files/Models/Wheels/Atomic15.dff" download="false" />
+	<file src="Files/Models/Wheels/Atomic15.txd" download="false" />
+	<file src="Files/Models/Wheels/Atomic16.dff" download="false" />
+	<file src="Files/Models/Wheels/Atomic16.txd" download="false" />
+	<file src="Files/Models/Wheels/Atomic17.dff" download="false" />
+	<file src="Files/Models/Wheels/Atomic17.txd" download="false" />
+
+	<!-- <file src="Files/Models/Wheels/Pack1_1.dff" download="false" />
+	<file src="Files/Models/Wheels/Pack1_2.dff" download="false" />
+	<file src="Files/Models/Wheels/Pack1_3.dff" download="false" />
+	<file src="Files/Models/Wheels/Pack1_4.dff" download="false" />
+	<file src="Files/Models/Wheels/Pack1_5.dff" download="false" />
+	<file src="Files/Models/Wheels/Pack1_6.dff" download="false" />
+	<file src="Files/Models/Wheels/Pack1_7.dff" download="false" />
+	<file src="Files/Models/Wheels/Pack1_8.dff" download="false" />
+	<file src="Files/Models/Wheels/Pack1_9.dff" download="false" />
+	<file src="Files/Models/Wheels/Pack1_10.dff" download="false" />
+	<file src="Files/Models/Wheels/Pack1.txd" download="false" /> -->
+
+	<file src="Files/Models/Wheels/Pack2_1.dff" download="false" />
+	<file src="Files/Models/Wheels/Pack2_2.dff" download="false" />
+	<file src="Files/Models/Wheels/Pack2_3.dff" download="false" />
+	<file src="Files/Models/Wheels/Pack2_4.dff" download="false" />
+	<file src="Files/Models/Wheels/Pack2_5.dff" download="false" />
+	<file src="Files/Models/Wheels/Pack2_6.dff" download="false" />
+	<file src="Files/Models/Wheels/Pack2_7.dff" download="false" />
+	<file src="Files/Models/Wheels/Pack2_8.dff" download="false" />
+	<file src="Files/Models/Wheels/Pack2_9.dff" download="false" />
+	<file src="Files/Models/Wheels/Pack2_10.dff" download="false" />
+	<file src="Files/Models/Wheels/Pack2_11.dff" download="false" />
+	<file src="Files/Models/Wheels/Pack2_12.dff" download="false" />
+	<file src="Files/Models/Wheels/Pack2_13.dff" download="false" />
+	<file src="Files/Models/Wheels/Pack2_14.dff" download="false" />
+	<file src="Files/Models/Wheels/Pack2_15.dff" download="false" />
+	<file src="Files/Models/Wheels/Pack2_16.dff" download="false" />
+	<file src="Files/Models/Wheels/Pack2.txd" download="false" />
+
+	<file src="Files/UI/*.*" />
+	<file src="Files/UI/**/*.*" />
+
+
+
+
+	<!--//Scripts\\-->
+	<script src="Files/Maps/client.lua" type="client" cache="false" />
+	<script src="Files/Maps/server.lua" type="server" />
+
+	<script src="Systems/**/shared.lua" type="client" cache="false" />
+	<script src="Systems/**/shared.lua" type="server" />
+	<script src="Systems/**/client.lua" type="client" cache="false" />
+	<script src="Systems/**/server.lua" type="server" />
+	<script src="Systems/**/codes.lua" type="server" />
+	<script src="Systems/**/plate.lua" type="server" />
+	<script src="Systems/**/PayNSpray.lua" type="server" />
+	<script src="Systems/**/**/logs.lua" type="server" />
+	<script src="Systems/**/**/shared.lua" type="client" cache="false" />
+	<script src="Systems/**/**/shared.lua" type="server" />
+	<script src="Systems/**/**/client.lua" type="client" cache="false" />
+	<script src="Systems/**/**/server.lua" type="server" />
+
+	<script src="Systems/Hud/**/*.*" type="client" cache="false" />
+
+	<script src="Systems/ego.lua" type="client" cache="false" />
+	<script src="Systems/LoadMods.lua" type="client" cache="false" />
+	<script src="Systems/LoadTextures.lua" type="client" cache="false" />
+	<script src="Systems/rendercef.lua" type="client" cache="false" />
+	<script src="Systems/sounds.lua" type="client" cache="false" />
+	<script src="Systems/ped_names.lua" type="client" cache="false" />
+	<script src="Systems/popup.lua" type="client" cache="false" />
+	<script src="Systems/weather.lua" type="client" cache="false" />
+	<script src="Systems/offlinemessages.lua" type="server" />
+
+	<script src="Systems/Other/BoneAttach/attach_func.lua" />
+	<script src="Systems/Other/BoneAttach/attach_func.lua" type="client" cache="false" />
+	<script src="Systems/Other/BoneAttach/bone_attach.lua" />
+	<script src="Systems/Other/BoneAttach/bone_attach_c.lua" type="client" cache="false" />
+	<script src="Systems/Other/BoneAttach/bone_pos_rot.lua" type="client" cache="false" />
+</meta>

@@ -1,0 +1,204 @@
+body{
+	margin: 0;
+    padding: 0;
+    overflow: hidden;
+    user-select: none;
+}
+
+.DateTime-Container{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.DateTime-Container-Text{
+    position: absolute;
+    top: 50%;
+	transform: translateY(-50%);
+
+    width: 100%;
+
+    font-size: 1.5vh;
+    color: white;
+    text-align: center;
+	font-family: "Rajdhani-Bold";
+}
+.DateTime{
+    position: relative;
+    width: 20vh;
+    height: 3vh;
+    background: rgba(0,0,0,0.50);
+}
+.DateTime:first-child:before{
+    position: absolute;
+
+    top: 0vh;
+    right: 100%;
+
+    width: 0vh;
+    height: 0vh;
+
+    content:'';
+    border: 1.5vh solid rgba(0,0,0,0.50);
+    border-top-color: transparent;
+    border-left-color: transparent;
+
+    transform: scaleY(-1);
+}
+.DateTime:first-child:after{
+    position: absolute;
+
+    top: 0vh;
+    left: 100%;
+    width: 0vh;
+    height: 0vh;
+    content: '';
+    border: 1.5vh solid rgba(0,0,0,0.50);
+    border-top-color: transparent;
+    border-left-color: transparent;
+
+    transform: scale(-1,-1);
+}
+
+
+.Hud#Cash{
+	position: absolute;
+
+	top: 1vh;
+	right: 2vh;
+
+    padding: 0.9vh;
+
+	background: rgba(0,240,255,0.70);
+    box-shadow: inset 0 0 1vh rgba(0,0,0,0.60), 0 1.6vh 2.7vh -1.3vh rgba(0,0,0,0);
+    text-shadow: 0vh 0vh 5vh rgba(0, 0, 0, 1);
+
+    border: 0.1vh solid rgba(0,240,255,1);
+
+	border-radius: 0.5vh;
+}
+.Hud#Black{
+	position: absolute;
+
+	top: 6vh;
+	right: 2vh;
+
+    padding: 0.9vh;
+
+    background: rgba(255,60,60,0.70);
+    box-shadow: inset 0 0 1vh rgba(0,0,0,0.60), 0 1.6vh 2.7vh -1.3vh rgba(0,0,0,0);
+    text-shadow: 0vh 0vh 5vh rgba(0, 0, 0, 1);
+
+    border: 0.1vh solid rgba(255,60,60,1);
+
+	border-radius: 0.5vh;
+}
+.Hud#Weapon{
+	position: absolute;
+
+	top: 12vh;
+	right: 2vh;
+
+    width: 7vh;
+    height: 7vh;
+
+    /* background: rgba(0,0,0,0.30); */
+}
+.Hud#Ammo{
+	position: absolute;
+
+	top: 12vh;
+	right: 2vh;
+
+    width: 7vh;
+    height: 3vh;
+
+    text-shadow: 0vh 0vh 1vh rgba(0, 0, 0, 1);
+    color: rgba(200,200,200,1);
+}
+.Hud-Text-Ammo{
+    text-shadow: 0vh 0vh 1vh rgba(0, 0, 0, 1);
+
+    font-size: 1.8vh;
+	font-family: "Rajdhani-Bold";
+    text-align: center;
+    align-content: center;
+}
+
+.Hud-Text{
+	position: relative;
+
+	
+    align-content: center;
+    text-align: center;
+    font-size: 1.7vh;
+	font-family: "Rajdhani-Bold";
+
+	background:-webkit-linear-gradient(rgb(255, 255, 255), #c7c7c7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    white-space: nowrap;
+}
+.Hud-Icon{
+	position: relative;
+
+	
+    text-align: right;
+    font-size: 1.5vh;
+
+	white-space: nowrap;
+}
+
+
+
+
+
+.Booster-Container{
+	position: absolute;
+	left: 1vh;
+	top: 62vh;
+
+	width: 25vh;
+}
+.BoosterIcon{
+	position: relative;
+	float: left;
+	width: 6vh;
+	height: 6vh;
+	transition: 0.3s;
+
+	margin: 0.4vh;
+	padding: 0.5vh 0.5vh;
+
+	/* font-size: 1.5vh;
+	text-align: center;
+	color: rgba(255,255,255,1); */
+
+	background: rgba(255,255,255,0.12);
+
+	border: 0.1vh solid rgba(255,255,255,0.20);
+	border-radius: 1vh;
+}
+.BoosterIcon-Img{
+    z-index: 5;
+	position: absolute;
+
+    top: 0.6vh;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 4.5vh;
+}
+.BoosterIcon-Text{
+    z-index: 10;
+    position: absolute;
+
+    bottom: 0.1vh;
+	left: 50%;
+	transform: translateX(-50%);
+
+	font-size: 1.1vh;
+    font-family: "Rajdhani-Bold";
+    color: rgba(255,255,255,1);
+
+    white-space: nowrap;
+}

@@ -1,0 +1,6 @@
+<map edf:definitions="editor_main">
+    <object id="object (CJ_URB_COUNTER) (1)" breakable="false" interior="0" alpha="255" dimension="0" model="2626" scale="1" doublesided="true" collisions="true" posX="-95.4" posY="1168" posZ="19.25" rotX="0" rotY="0" rotZ="-180"></object>
+    <object id="object (Gen_doorINT04) (1)" breakable="false" interior="0" alpha="255" dimension="0" model="1502" scale="1" doublesided="false" collisions="true" posX="-98.67" posY="1158.4" posZ="18.73" rotX="0" rotY="0" rotZ="0"></object>
+    <object id="object (fenceshit3) (1)" breakable="false" interior="0" alpha="255" dimension="0" model="983" scale="0" doublesided="false" collisions="true" posX="-102" posY="1158.4" posZ="19.4" rotX="0" rotY="0" rotZ="-90"></object>
+    <object id="object (fenceshit3) (2)" breakable="false" interior="0" alpha="255" dimension="0" model="983" scale="0" doublesided="false" collisions="true" posX="-102" posY="1158.4" posZ="20.8" rotX="0" rotY="0" rotZ="-90"></object>
+</map>

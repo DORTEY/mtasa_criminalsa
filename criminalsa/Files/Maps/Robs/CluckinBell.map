@@ -1,0 +1,6 @@
+<map edf:definitions="editor_main">
+    <removeWorldObject id="removeWorldObject (Gen_doorSHOP3) (1)" radius="3.4566965" interior="0" model="1522" lodModel="0" posX="2399.3281" posY="-1899.6172" posZ="12.53906" rotX="0" rotY="0" rotZ="0"></removeWorldObject>
+    <object id="object (Gen_doorEXT10) (1)" breakable="true" interior="0" alpha="255" dimension="0" model="1523" scale="1" doublesided="false" collisions="true" posX="2398.8" posY="-1909.45" posZ="12.5" rotX="0" rotY="0" rotZ="180"></object>
+    <object id="object (Gen_doorSHOP3) (1)" breakable="true" interior="0" alpha="255" dimension="0" model="1522" scale="1" doublesided="false" collisions="true" posX="2396.3" posY="-1899.7" posZ="12.5" rotX="0" rotY="0" rotZ="270"></object>
+    <object id="object (Gen_doorSHOP3) (2)" breakable="true" interior="0" alpha="255" dimension="0" model="1522" scale="1" doublesided="false" collisions="true" posX="2399.3" posY="-1899.6" posZ="12.5" rotX="0" rotY="0" rotZ="270"></object>
+</map>

@@ -1,0 +1,137 @@
+body{
+	margin: 0;
+    padding: 0;
+    font-family: 'Rajdhani', sans-serif;
+    overflow: hidden;
+    user-select: none;
+}
+
+.MainUI{
+	position: absolute;
+	top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    height: 100%;
+	
+    background: radial-gradient(circle 330vh at 50% 50%, rgba(0,0,0,0.90), rgba(0,240,255,0.30));
+
+	overflow:  hidden;
+}
+
+.SecondUI{
+	position: absolute;
+
+	top: 50%;
+    left: 50%;
+	transform: translate(-50%,-50%);
+
+    width: 60vh;
+    height: 60vh;
+}
+
+.Heart{
+	position: absolute;
+	top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+	font-size: 12vh;
+
+	animation: pulse 2s linear infinite;
+}
+
+.KilledBy{
+	display: none;
+
+	position: absolute;
+
+	top: 2;
+    left: 50%;
+    transform: translateX(-50%);
+
+	font-size: 4vh;
+}
+.KilledBy-Text{
+	display: none;
+
+	position: absolute;
+
+	top: 8vh;
+    left: 50%;
+    transform: translateX(-50%);
+
+	font-size: 2vh;
+
+	white-space: nowrap;
+}
+
+.Time{
+	display: none;
+
+	position: absolute;
+
+	bottom: 3vh;
+    left: 50%;
+    transform: translateX(-50%);
+	
+	width: 100%;
+
+	color: rgba(199,199,199,1);
+    align-content: center;
+    text-align: center;
+    font-size: 2.4vh;
+}
+
+.TimerBar{
+	display: none;
+	
+	position: absolute;
+
+	bottom: 2vh;
+	left: 50%;
+    transform: translateX(-50%);
+
+	width: 25vh;
+	height: 2vh;
+
+	background: rgba(0,0,0,0.40);
+
+	border-radius: 0.5vh;
+}
+.TimerBar-Progress{
+	position: relative;
+
+	width: 100%;
+	transition: 0.2s;
+	
+	height: 2vh;
+
+	background: rgba(0,240,255,1);
+
+	border-radius: 0.5vh;
+}
+
+
+
+
+
+
+
+@keyframes pulse {
+	0%{
+		top: 50%;
+		left: 50%;
+   		transform: translate(-50%,-50%) scale(1);
+	}
+	50%{
+		top: 50%;
+		left: 50%;
+   		transform: translate(-50%,-50%) scale(0.85);
+	}
+	100%{
+		top: 50%;
+		left: 50%;
+   		transform: translate(-50%,-50%) scale(1);
+	}
+}

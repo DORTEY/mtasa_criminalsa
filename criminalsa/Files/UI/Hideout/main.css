@@ -1,0 +1,463 @@
+body{
+	margin: 0;
+    padding: 0;
+    overflow: hidden;
+    user-select: none;
+}
+
+.SecondUI{
+	position: absolute;
+
+	top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100vh;
+    height: 55vh;
+
+	background: repeating-linear-gradient(-55deg,rgba(56, 56, 56, 0.36),rgba(56, 56, 56, 0.36) 1.0vh,rgba(56, 56, 56, 0.4), 1.0vh,rgba(56, 56, 56, 0.4) 2.0vh);
+    background-color:rgb(0, 0, 0);
+
+	border-radius: 1vh;
+}
+
+/*Left panel*/
+.Navbar{
+    position: absolute;
+
+	top: 8vh;
+	left: 2vh;
+	width: 25vh;
+	height: 45vh;
+
+	background: rgba(255,255,255,0.04);
+
+	border-top-left-radius: 1vh;
+	border-bottom-left-radius: 1vh;
+	
+	overflow: auto;
+}
+.Navbar-Items{
+	margin: 0.6vh;
+	padding: 0.8vh 1vh;
+	transition: 0.3s;
+	
+	color: rgba(200,200,200,1);
+    font-size: 1.5vh;
+	font-family: "Rajdhani-Medium";
+
+	background: rgba(255,255,255,0.06);
+
+	border-left: 0.2vh solid rgba(255,255,255,0.08);
+
+	white-space: nowrap;
+}
+.Navbar-Items:hover,.Navbar-Items-Active{
+	color: rgba(2,160,168,1);
+
+	background: rgba(255,255,255,0.08);
+
+	border-left: 0.4vh solid rgba(2,160,168,1);
+}
+.Navbar-Item-Text{
+	display: inline-block;
+	padding-right: 2vh;
+}
+
+.ThirdUI{
+	position: absolute;
+
+	top: 8vh;
+    right: 2vh;
+    width: 70vh;
+    height: 45vh;
+
+	background: rgba(255,255,255,0.04);
+
+	border-top-right-radius: 1vh;
+	border-bottom-right-radius: 1vh;
+}
+
+/*Requirements*/
+.Requirements{
+    position: absolute;
+
+	bottom: 1vh;
+	right: 1vh;
+	max-height: 16.5vh;
+
+	padding-top: 2vh;
+
+	background: rgba(255,255,255,0.04);
+
+	border-radius: 1vh;
+	
+	overflow: auto;
+}
+.Requirements-Title{
+	position: absolute;
+	top: 0.4vh;
+	left: 50%;
+	transform: translateX(-50%);
+
+	color: rgba(200,200,200,1);
+    font-size: 1.4vh;
+	font-family: "Rajdhani-Medium";
+
+	align-content: center;
+    text-align: center;
+}
+.Requirements-Items{
+	margin: 0.6vh;
+	padding: 0.8vh 1vh;
+	transition: 0.3s;
+	
+	color: rgba(200,200,200,1);
+    font-size: 1.4vh;
+	font-family: "Rajdhani-Medium";
+
+	background: rgba(255,255,255,0.06);
+
+	border-radius: 1vh;
+}
+.Requirements-Item-Text{
+	display: inline-block;
+	padding-right: 2vh;
+}
+
+/*Benefits*/
+.Benefits{
+    position: absolute;
+
+	bottom: 1vh;
+	left: 1vh;
+	max-height: 16.5vh;
+
+	padding-top: 2vh;
+
+	background: rgba(255,255,255,0.04);
+
+	border-radius: 1vh;
+	
+	overflow: auto;
+}
+.Benefits-Title{
+	position: absolute;
+	top: 0.4vh;
+	left: 50%;
+	transform: translateX(-50%);
+
+	color: rgba(200,200,200,1);
+    font-size: 1.4vh;
+	font-family: "Rajdhani-Medium";
+
+	align-content: center;
+    text-align: center;
+}
+.Benefits-Items{
+	margin: 0.6vh;
+	padding: 0.8vh 1vh;
+	transition: 0.3s;
+	
+	color: rgba(200,200,200,1);
+    font-size: 1.4vh;
+	font-family: "Rajdhani-Medium";
+
+	background: rgba(255,255,255,0.06);
+
+	border-radius: 1vh;
+}
+.Benefits-Item-Text{
+	display: inline-block;
+	padding-right: 2vh;
+}
+
+
+/* Timer */
+.Timer-Bar{
+	position: absolute;
+	top: 2vh;
+	left: 2vh;
+
+	width: 22vh;
+	height: 4vh;
+
+	background:rgba(255,255,255,0.04);
+    border-width: 0.1vh;
+    border-style: solid;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-image: radial-gradient(#00000000, rgba(255, 255, 255, 0.123), rgba(0, 0, 0, 0)) 1;
+    box-shadow: 0vh 0vh 2vh rgba(0,0,0,0.295);
+
+	border-radius: 1vh;
+
+	white-space: nowrap;
+}
+.Timer-Title{
+	position: absolute;
+	top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+	
+    align-content: center;
+    text-align: center;
+    font-size: 1.5vh;
+	font-family: "Rajdhani-Medium";
+	color: #fff;
+}
+/* Amount */
+.Amount-Bar{
+	position: absolute;
+	top: 2vh;
+	left: 30vh;
+
+	width: 22vh;
+	height: 4vh;
+
+	background:rgba(255,255,255,0.04);
+    border-width: 0.1vh;
+    border-style: solid;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-image: radial-gradient(#00000000, rgba(255, 255, 255, 0.123), rgba(0, 0, 0, 0)) 1;
+    box-shadow: 0vh 0vh 2vh rgba(0,0,0,0.295);
+
+	border-radius: 1vh;
+
+	white-space: nowrap;
+}
+.Amount-Title{
+	position: absolute;
+	top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+	
+    align-content: center;
+    text-align: center;
+    font-size: 1.5vh;
+	font-family: "Rajdhani-Medium";
+	color: #fff;
+}
+
+/* Queue */
+.ItemList{
+    position: absolute;
+
+	top: 1vh;
+	left: 1vh;
+	width: 30vh;
+	height: 20vh;
+
+	background: rgba(255,255,255,0.04);
+	
+	overflow: auto;
+	overflow-x: hidden;
+}
+.ItemList-Items{
+	position: relative;
+
+	width: 28.3vh;
+	height: 5vh;
+
+	margin: 0.6vh;
+	transition: 0.3s;
+	
+	color: rgba(200,200,200,1);
+    font-size: 1.3vh;
+	font-family: "Rajdhani-Medium";
+
+	background: rgba(255,255,255,0.06);
+
+	border-left: 0.2vh solid rgba(255,255,255,0.08);
+}
+.ItemList-Items:hover,.ItemList-Items-Active{
+	color: rgba(2,160,168,1);
+
+	background: rgba(255,255,255,0.08);
+
+	border-left: 0.4vh solid rgba(2,160,168,1);
+}
+.ItemList-Item-Text{
+	display: inline-block;
+
+	position: absolute;
+
+	top: 0.5vh;
+	left: 1vh;
+
+	letter-spacing: 0.1vh;
+}
+.ItemList-Item-Text2{
+	position: absolute;
+
+	top: 2vh;
+	left: 2vh;
+
+	letter-spacing: 0.1vh;
+}
+
+.ItemList2{
+    position: absolute;
+
+	top: 1vh;
+	right: 1vh;
+	width: 30vh;
+	height: 20vh;
+
+	background: rgba(255,255,255,0.04);
+	
+	overflow: auto;
+	overflow-x: hidden;
+}
+.ItemList2-Items{
+	position: relative;
+
+	width: 28.3vh;
+	height: 5vh;
+
+	margin: 0.6vh;
+	transition: 0.3s;
+	
+	color: rgba(200,200,200,1);
+    font-size: 1.2vh;
+	font-family: "Rajdhani-Medium";
+
+	background: rgba(255,255,255,0.06);
+
+	border-left: 0.2vh solid rgba(255,255,255,0.08);
+}
+.ItemList2-Items:hover{
+	color: rgba(2,160,168,1);
+
+	background: rgba(255,255,255,0.08);
+
+	border-left: 0.4vh solid rgba(2,160,168,1);
+}
+.ItemList2-Item-Text{
+	position: absolute;
+
+	top: 1.8vh;
+	left: 1vh;
+
+	letter-spacing: 0.1vh;
+}
+
+
+.ButtonTake{
+	position: absolute;
+	bottom: 1vh;
+	right: 1vh;
+
+	width: 3vh;
+	height: 3vh;
+
+	transition: 0.3s;
+
+	font-size: 1.7vh;
+
+	background: rgba(2,160,168,0.50);
+
+	border: 0.1vh solid rgba(0,0,0,0);
+}
+.ButtonTake:hover{
+	border: 0.1vh solid rgba(2,160,168,1);
+}
+
+.ButtonDelete{
+	position: absolute;
+	bottom: 1vh;
+	right: 5vh;
+
+	width: 3vh;
+	height: 3vh;
+
+	transition: 0.3s;
+
+	font-size: 1.7vh;
+
+	background: rgba(2,160,168,0.50);
+
+	border: 0.1vh solid rgba(0,0,0,0);
+}
+.ButtonDelete:hover{
+	border: 0.1vh solid rgba(2,160,168,1);
+}
+
+
+
+
+
+
+
+
+
+
+.Button{
+	z-index: 50;
+    position: absolute;
+	transition: 0.3s;
+
+	width: 25vh;
+	height: 3.5vh;
+
+    text-shadow: 0 0 0.6vh rgb(0, 0, 0);
+    font-size: 1.6vh;
+	color:#fff;
+
+	background:rgba(255,255,255,0.04);
+
+	border: none;
+	border-radius: 1vh;
+
+    outline: none;
+    backface-visibility: hidden;
+}
+.Button:hover{
+    letter-spacing: 0.2vh;
+}
+.Button:hover:before{
+    opacity:1;
+}
+.Button:before{
+	content:"";
+	z-index: -1;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+	transition: 0.3s;
+
+	width: 100%;
+    height: 100%;
+
+	background: repeating-linear-gradient(-55deg,rgba(0, 255, 255, 0.24),rgba(0, 255, 255, 0.24) 1.0vh,rgba(0, 255, 255, 0.28) 1.0vh,rgba(0, 255, 255, 0.28)  2.0vh);
+
+    border-radius: 1vh;
+
+    backface-visibility: hidden;
+}
+
+
+
+
+
+
+
+
+::-webkit-scrollbar{
+	width: 0.4vh;
+}
+::-webkit-scrollbar-thumb{
+	background: rgba(255,255,255,0.06);
+	border-radius: 1vh;
+}
+::-webkit-scrollbar-track{
+	background-color: rgba(40,40,40,0);
+	border-radius: 1vh;
+}
+::-webkit-scrollbar-thumb:hover{
+	background: rgba(2,160,168,1);
+}

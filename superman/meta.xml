@@ -1,0 +1,6 @@
+<meta>
+  <info author="Alberto Alonso (ryden)" version="2.0" type="script" />
+  <download_priority_group>11</download_priority_group>
+  <script src="server.lua" type="server" />
+  <script src="client.lua" type="client" />
+</meta>

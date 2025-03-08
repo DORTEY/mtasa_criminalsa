@@ -1,0 +1,10 @@
+<map edf:definitions="editor_main">
+    <object id="object (marketstall01_SFXRF) (1)" breakable="false" interior="0" alpha="255" dimension="0" model="3861" scale="1" doublesided="false" collisions="true" posX="2621.2" posY="-1082.3" posZ="69.8" rotX="0" rotY="0" rotZ="-5"></object>
+    <removeWorldObject id="removeWorldObject (ganghous03_LAx) (1)" radius="13.241857" interior="-1" model="3655" lodModel="3656" posX="2620.1875" posY="-1086.1875" posZ="71.38281" rotX="0" rotY="0" rotZ="0"></removeWorldObject>
+    <object id="object (marketstall01_SFXRF) (2)" breakable="false" interior="0" alpha="255" dimension="0" model="3861" scale="1" doublesided="false" collisions="true" posX="2613.8" posY="-1081.8" posZ="69.8" rotX="0" rotY="0" rotZ="-5.004"></object>
+    <object id="object (marketstall01_SFXRF) (3)" breakable="false" interior="0" alpha="255" dimension="0" model="3861" scale="1" doublesided="false" collisions="true" posX="2615.5" posY="-1091.5" posZ="69.8" rotX="0" rotY="0" rotZ="-180"></object>
+    <object id="object (marketstall01_SFXRF) (4)" breakable="false" interior="0" alpha="255" dimension="0" model="3861" scale="1" doublesided="false" collisions="true" posX="2621" posY="-1091.5" posZ="69.8" rotX="0" rotY="0" rotZ="179.995"></object>
+    <object id="object (telgrphpole02) (1)" breakable="false" interior="0" alpha="255" dimension="0" model="1308" scale="1" doublesided="false" collisions="true" posX="2616.1001" posY="-1088.9" posZ="68.6" rotX="0" rotY="0" rotZ="0"></object>
+    <object id="object (telgrphpole02) (2)" breakable="false" interior="0" alpha="255" dimension="0" model="1308" scale="1" doublesided="false" collisions="true" posX="2624.5" posY="-1083" posZ="68.6" rotX="-5" rotY="0" rotZ="0"></object>
+    <object id="object (ab_warehouseShelf) (1)" breakable="false" interior="0" alpha="255" dimension="0" model="2567" scale="1" doublesided="true" collisions="true" posX="2609.3" posY="-1083" posZ="70.5" rotX="0" rotY="0" rotZ="90"></object>
+</map>
